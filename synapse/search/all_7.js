@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gamma',['Gamma',['../classBeam.html#abde439fd8e3161f1d380e0242e4e49b5',1,'Beam::Gamma() const '],['../classBeam.html#abcf2acb94096ada93e5af49177086f28',1,'Beam::Gamma(const std::string axis) const '],['../classDetectorGlobals.html#a3ac3540ef58f6633c151a04d12dfdc6a',1,'DetectorGlobals::gamma()']]],
+  ['gamma',['Gamma',['../classBeam.html#abde439fd8e3161f1d380e0242e4e49b5',1,'Beam::Gamma() const '],['../classBeam.html#abcf2acb94096ada93e5af49177086f28',1,'Beam::Gamma(const std::string axis) const '],['../classDetectorGlobals.html#a6d28e4976782d72cdbdd5ff79ca81bfc',1,'DetectorGlobals::gamma()']]],
   ['gaussianbeam',['GaussianBeam',['../ToyTools_8hh.html#aa20cc8d508be9649b438005e7c8a9711',1,'ToyTools.cc']]],
   ['generaliseddistance',['GeneralisedDistance',['../namespaceMath.html#ab9b658f5911115aa34bc5bb911e21c4b',1,'Math']]],
   ['generaliseddistancesquared',['GeneralisedDistanceSquared',['../namespaceMath.html#a170d31f36abaa254ac7d478fa227ed07',1,'Math']]],

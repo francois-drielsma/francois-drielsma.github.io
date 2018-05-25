@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readme',['README',['../md_README.html',1,'']]],
   ['r',['R',['../classDecompQR.html#a68aecdbfcdefeea0d43953fb94cf1d22',1,'DecompQR']]],
   ['radial',['Radial',['../classDCauchy.html#a8400269486c167cb3d012f5693fc109a',1,'DCauchy::Radial()'],['../classDChiSquared.html#a2a5e743739d43c95c022ccdbb86d4026',1,'DChiSquared::Radial()'],['../classDExponential.html#a56a4d505181331d8b82210321e89578b',1,'DExponential::Radial()'],['../classDFunction.html#a14e197200506d6b61b6d396514f85ca7',1,'DFunction::Radial()'],['../classDGaus.html#a9bbd20f74cb8057cdb130607486070d8',1,'DGaus::Radial()'],['../classDMaxwell.html#a3d64de65a7b571dc7ce4b79ed1a88074',1,'DMaxwell::Radial()'],['../classDMultiGaus.html#aef84710244ffc38ee7e35d261d1a3d42',1,'DMultiGaus::Radial(const double R) const '],['../classDMultiGaus.html#a9aa2401c7f7131f55de2c67582a2ac33',1,'DMultiGaus::Radial(const size_t i, const double R) const '],['../classDPoisson.html#a0d8e9afcbfaa2753def6281a18493879',1,'DPoisson::Radial()'],['../classDSpiral.html#a92938215d131d62b67cc231bda2f3763',1,'DSpiral::Radial()'],['../classDTriangular.html#aa5d73757bd66f9980a1d28f037f9411e',1,'DTriangular::Radial()'],['../classDUniform.html#aa146623e32cf59349073f092a0c31be0',1,'DUniform::Radial()']]],
   ['radii',['Radii',['../classDChiSquared.html#aedf25639333149fe1f325cc3a21222f2',1,'DChiSquared::Radii()'],['../classDMaxwell.html#ac4da12be6af0da274b1bb58b3ea17b4c',1,'DMaxwell::Radii()'],['../classDMultiGaus.html#a32130d7c1caffe99c6a872375b7f0aeb',1,'DMultiGaus::Radii()'],['../classDPoisson.html#a23f0781849815a03bd7f5cf14be3029e',1,'DPoisson::Radii()']]],
@@ -16,7 +17,7 @@ var searchData=
   ['removecolumn',['RemoveColumn',['../classMatrix.html#a337ef469c8a71439cf82ca1bfeb91063',1,'Matrix']]],
   ['removerow',['RemoveRow',['../classMatrix.html#a64136fdec8a24fefcb6b7c1936154957',1,'Matrix']]],
   ['resample',['Resample',['../namespaceMath.html#a13a48fc848bfd9fc89489a6570e4b21c',1,'Math']]],
-  ['resize',['Resize',['../classMatrix.html#af5539ab190d0827a87f261ed5c31e86f',1,'Matrix::Resize()'],['../classVector.html#a1471efd125729e51f91fbec5fdbf5457',1,'Vector::resize()']]],
+  ['resize',['resize',['../classVector.html#a1471efd125729e51f91fbec5fdbf5457',1,'Vector::resize()'],['../classMatrix.html#af5539ab190d0827a87f261ed5c31e86f',1,'Matrix::Resize()']]],
   ['reweightbeam_2ecc',['ReweightBeam.cc',['../ReweightBeam_8cc.html',1,'']]],
   ['rho',['rho',['../structMaterial.html#ae367ecfd4c2c6dd43c072b9840594028',1,'Material']]],
   ['righthanded',['RightHanded',['../namespaceMath.html#a81023333c834c076e510edf00fb9a062',1,'Math']]],

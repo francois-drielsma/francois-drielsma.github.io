@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>SynAPSE: /home/frans/mice/emittance/tools/Drawer.hh Source File</title>
+<title>SynAPSE: tools/Drawer.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="SynAPSE_small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
    &#160;<span id="projectnumber">0.5.3</span>
@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,49 +98,136 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// C++ includes</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// ROOT includes</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;TPaveText.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;TText.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;TString.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structDrawingOptions.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structDrawingOptions.html">DrawingOptions</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structDrawingOptions.html#a1835030a7cc2459b620bea4e1f5603bf">   15</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawingOptions.html#a1835030a7cc2459b620bea4e1f5603bf">line_style</a>;       </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structDrawingOptions.html#a8572a8aeac7ee189349e470dbef4acb5">   16</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawingOptions.html#a8572a8aeac7ee189349e470dbef4acb5">line_color</a>;       </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structDrawingOptions.html#af8cc2d38c59b5837796fb02889465d5d">   17</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawingOptions.html#af8cc2d38c59b5837796fb02889465d5d">line_width</a>;       </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structDrawingOptions.html#abd4a16f53f2d98e9241b38ffe19149d5">   18</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawingOptions.html#abd4a16f53f2d98e9241b38ffe19149d5">fill_style</a>;       </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structDrawingOptions.html#af36ad46c46a2614e6df1ab2e3734c793">   19</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawingOptions.html#af36ad46c46a2614e6df1ab2e3734c793">fill_color</a>;       </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structDrawingOptions.html#ae922fbfeda6158582708da5d1a68529a">   20</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawingOptions.html#ae922fbfeda6158582708da5d1a68529a">fill_alpha</a>;       </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>Drawer {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Drawer();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  Drawer(<span class="keyword">const</span> Drawer&amp; dra);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Drawer&amp; operator=(<span class="keyword">const</span> Drawer&amp; dra);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// ROOT includes</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;TH1F.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;TH2F.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;THStack.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;TF1.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;TGaxis.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;TLine.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;TBox.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;TPaveStats.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;TLegend.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;TCanvas.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Additional includes</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;Pitch.hh&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;ProgressBar.hh&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;GeometryHandler.hh&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;InfoBox.hh&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structDrawOpt.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structDrawOpt.html">DrawOpt</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a7d9e2e870e25134ccddae377b451d2e4">   29</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a7d9e2e870e25134ccddae377b451d2e4">line_style</a> = 1;       </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structDrawOpt.html#ae8cacd6c8a436ba2fc9655767293410f">   30</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#ae8cacd6c8a436ba2fc9655767293410f">line_color</a> = 1;       </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a60e47592ba179d3a2072adb1f6a14243">   31</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a60e47592ba179d3a2072adb1f6a14243">line_width</a> = 2;       </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a336af8116d02d000ac621749db334e23">   32</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a336af8116d02d000ac621749db334e23">fill_style</a> = 0;       </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structDrawOpt.html#ac30febc0796d5801121c1d12373dd6ca">   33</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#ac30febc0796d5801121c1d12373dd6ca">fill_color</a> = 0;       </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a298e7eb29963ef430b1481044fb5487a">   34</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a298e7eb29963ef430b1481044fb5487a">fill_alpha</a> = 1;       </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a77851fcbee35f6e55dde31729ac2478e">   35</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a77851fcbee35f6e55dde31729ac2478e">marker_style</a> = 0;     </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a6eba2416962ff38941ca96dc02b9c248">   36</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a6eba2416962ff38941ca96dc02b9c248">marker_color</a> = 1;     </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structDrawOpt.html#a4be87aa7ba012fc62d3bd5a862e4e25b">   37</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structDrawOpt.html#a4be87aa7ba012fc62d3bd5a862e4e25b">marker_size</a>  = 1;     </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ~Drawer();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;std::map&lt;std::string, </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//  std::string     _cycle;     ///&lt; ISIS user cycle</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structVarSet.html">   41</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structVarSet.html">VarSet</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structVarSet.html#a58911102c3131dc511e8d5e06abe8381">   42</a></span>&#160;  std::string <a class="code" href="structVarSet.html#a58911102c3131dc511e8d5e06abe8381">label</a>;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structVarSet.html#a71243e98c2e0d942bc30951d3145f8a5">   43</a></span>&#160;  std::string <a class="code" href="structVarSet.html#a71243e98c2e0d942bc30951d3145f8a5">unit</a>;     </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structVarSet.html#a1864a7d34d3377fd27cc862fe8e9e275">   44</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="structVarSet.html#a1864a7d34d3377fd27cc862fe8e9e275">llim</a>;          </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structVarSet.html#a599b36c412dfce27775ab7f9e221656b">   45</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="structVarSet.html#a599b36c412dfce27775ab7f9e221656b">ulim</a>;          </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structVarSet.html#a9d4b2108f54f7031d1c89abd674757b0">   46</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structVarSet.html#a9d4b2108f54f7031d1c89abd674757b0">nbins</a> = 100;       </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="structDrawingOptions_html_abd4a16f53f2d98e9241b38ffe19149d5"><div class="ttname"><a href="structDrawingOptions.html#abd4a16f53f2d98e9241b38ffe19149d5">DrawingOptions::fill_style</a></div><div class="ttdeci">int fill_style</div><div class="ttdoc">Fill pattern (TAttFill code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:18</div></div>
-<div class="ttc" id="structDrawingOptions_html_ae922fbfeda6158582708da5d1a68529a"><div class="ttname"><a href="structDrawingOptions.html#ae922fbfeda6158582708da5d1a68529a">DrawingOptions::fill_alpha</a></div><div class="ttdeci">int fill_alpha</div><div class="ttdoc">Fill opacity (From 0=transparent to 1=opaque) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:20</div></div>
-<div class="ttc" id="structDrawingOptions_html_af36ad46c46a2614e6df1ab2e3734c793"><div class="ttname"><a href="structDrawingOptions.html#af36ad46c46a2614e6df1ab2e3734c793">DrawingOptions::fill_color</a></div><div class="ttdeci">int fill_color</div><div class="ttdoc">Fill color (TColor code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:19</div></div>
-<div class="ttc" id="structDrawingOptions_html_af8cc2d38c59b5837796fb02889465d5d"><div class="ttname"><a href="structDrawingOptions.html#af8cc2d38c59b5837796fb02889465d5d">DrawingOptions::line_width</a></div><div class="ttdeci">int line_width</div><div class="ttdoc">Line width (1 is default) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:17</div></div>
-<div class="ttc" id="structDrawingOptions_html"><div class="ttname"><a href="structDrawingOptions.html">DrawingOptions</a></div><div class="ttdoc">Structure that stores the drawing options. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:14</div></div>
-<div class="ttc" id="structDrawingOptions_html_a1835030a7cc2459b620bea4e1f5603bf"><div class="ttname"><a href="structDrawingOptions.html#a1835030a7cc2459b620bea4e1f5603bf">DrawingOptions::line_style</a></div><div class="ttdeci">int line_style</div><div class="ttdoc">Line style (plain, dashed, dotted, etc.) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:15</div></div>
-<div class="ttc" id="structDrawingOptions_html_a8572a8aeac7ee189349e470dbef4acb5"><div class="ttname"><a href="structDrawingOptions.html#a8572a8aeac7ee189349e470dbef4acb5">DrawingOptions::line_color</a></div><div class="ttdeci">int line_color</div><div class="ttdoc">Line color (TColor code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:16</div></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classDrawer.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDrawer.html">Drawer</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classDrawer.html#a7daabfaadc8a076a71f5f09b0a88f4bb">Drawer</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classDrawer.html#a7daabfaadc8a076a71f5f09b0a88f4bb">Drawer</a>(<span class="keyword">const</span> <a class="code" href="classDrawer.html">Drawer</a>&amp; dra);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classDrawer.html">Drawer</a>&amp; <a class="code" href="classDrawer.html#a181ebeb0c0759a1538181543f4547d9c">operator=</a>(<span class="keyword">const</span> <a class="code" href="classDrawer.html">Drawer</a>&amp; dra);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classDrawer.html#a4eb8d086fd51c4e753dadfa05ad0b99e">~Drawer</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  TH1F* <a class="code" href="classDrawer.html#a73a96bf795958e155cdb28faeb84bbf2">New1DHistogram</a>(<span class="keyword">const</span> std::string&amp; name,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;               <span class="keyword">const</span> std::string&amp; var) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  TH2F* <a class="code" href="classDrawer.html#aaf39954939613e8726d968524e70c0b4">New2DHistogram</a>(<span class="keyword">const</span> std::string&amp; name,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;               <span class="keyword">const</span> std::string&amp; varx,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;               <span class="keyword">const</span> std::string&amp; vary) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  TH1F* <a class="code" href="classDrawer.html#ad4349cf93a2ef308e6cce3bbf3056e45">ProjectionMeanX</a>(TH2F* hist,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordtype">bool</span> fit = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDrawer.html#abafb33fb44ebc34a3286ec7ef9b20b00">DrawDataSimStack</a>(TH1F* hist_dat,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                TH1F* hist_sim,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keyword">const</span> std::string&amp; name,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordtype">bool</span> ratio=<span class="keyword">false</span>,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <a class="code" href="classInfoBox.html">InfoBox</a>* info=NULL);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDrawer.html#acbed2f8862f6713122e673d92430208f">SetStyle</a>(TH1* obj,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">const</span> std::string&amp; type) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDrawer.html#a41ce4d11b78f5b4a199a57ec6f75f71b">Initialize</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDrawer.html#a28e135af7a48509e7d236ee624c4088b">DrawDataSimInfo</a>(TH1F* hist_dat,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;               TH1F* hist_sim,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;               <span class="keyword">const</span> std::string draw_opt=<span class="stringliteral">&quot;EMR&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDrawer.html#a5c6bd5690375e6fbcbb1fb1311a57f7a">DrawMICEModules</a>(<span class="keyword">const</span> <a class="code" href="classGeometryHandler.html">GeometryHandler</a>&amp; geoh,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; miny,</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; maxy);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDrawer.html#a080aed447aae22c4f40fa60776efb9a8">SaveGIF</a>(<span class="keyword">const</span> std::string&amp; name,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;           <span class="keyword">const</span> std::vector&lt;TCanvas*&gt;&amp; canv);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classDrawer.html#abe98b18449978bf13c2e3450d3104927">  150</a></span>&#160;  std::vector&lt;std::string&gt;      <a class="code" href="classDrawer.html#abe98b18449978bf13c2e3450d3104927">_types</a>;     </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classDrawer.html#adee979b20aee4790351ae56d0ef92815">  151</a></span>&#160;  std::vector&lt;std::string&gt;      <a class="code" href="classDrawer.html#adee979b20aee4790351ae56d0ef92815">_vars</a>;      </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classDrawer.html#afb31fa131fe876b57588c7e57b0d5bcf">  152</a></span>&#160;  std::map&lt;std::string, DrawOpt&gt;    <a class="code" href="classDrawer.html#afb31fa131fe876b57588c7e57b0d5bcf">_options</a>;   </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classDrawer.html#a0fffd6dc5cb9c325c2dd0d5cd9be76bf">  153</a></span>&#160;  std::map&lt;std::string, VarSet&gt;     <a class="code" href="classDrawer.html#a0fffd6dc5cb9c325c2dd0d5cd9be76bf">_varsets</a>;   </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;};</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="structDrawOpt_html_a77851fcbee35f6e55dde31729ac2478e"><div class="ttname"><a href="structDrawOpt.html#a77851fcbee35f6e55dde31729ac2478e">DrawOpt::marker_style</a></div><div class="ttdeci">int marker_style</div><div class="ttdoc">Marker shape (TAttMarker code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:35</div></div>
+<div class="ttc" id="classDrawer_html_ad4349cf93a2ef308e6cce3bbf3056e45"><div class="ttname"><a href="classDrawer.html#ad4349cf93a2ef308e6cce3bbf3056e45">Drawer::ProjectionMeanX</a></div><div class="ttdeci">TH1F * ProjectionMeanX(TH2F *hist, bool fit=false) const </div><div class="ttdoc">Produces a TH1F of the mean Y as a function of X from a TH2F. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:55</div></div>
+<div class="ttc" id="structDrawOpt_html_a4be87aa7ba012fc62d3bd5a862e4e25b"><div class="ttname"><a href="structDrawOpt.html#a4be87aa7ba012fc62d3bd5a862e4e25b">DrawOpt::marker_size</a></div><div class="ttdeci">int marker_size</div><div class="ttdoc">Marker size. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:37</div></div>
+<div class="ttc" id="classDrawer_html_a7daabfaadc8a076a71f5f09b0a88f4bb"><div class="ttname"><a href="classDrawer.html#a7daabfaadc8a076a71f5f09b0a88f4bb">Drawer::Drawer</a></div><div class="ttdeci">Drawer()</div><div class="ttdoc">Default constructor, intializes the default drawing options. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:3</div></div>
+<div class="ttc" id="classDrawer_html_acbed2f8862f6713122e673d92430208f"><div class="ttname"><a href="classDrawer.html#acbed2f8862f6713122e673d92430208f">Drawer::SetStyle</a></div><div class="ttdeci">void SetStyle(TH1 *obj, const std::string &amp;type) const </div><div class="ttdoc">Sets the style according to the predefined options. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:176</div></div>
+<div class="ttc" id="structDrawOpt_html_a7d9e2e870e25134ccddae377b451d2e4"><div class="ttname"><a href="structDrawOpt.html#a7d9e2e870e25134ccddae377b451d2e4">DrawOpt::line_style</a></div><div class="ttdeci">int line_style</div><div class="ttdoc">Line style (plain, dashed, dotted, etc.) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:29</div></div>
+<div class="ttc" id="classDrawer_html_a73a96bf795958e155cdb28faeb84bbf2"><div class="ttname"><a href="classDrawer.html#a73a96bf795958e155cdb28faeb84bbf2">Drawer::New1DHistogram</a></div><div class="ttdeci">TH1F * New1DHistogram(const std::string &amp;name, const std::string &amp;var) const </div><div class="ttdoc">Returns an appropriate TH1F to draw one of the phase space component. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:33</div></div>
+<div class="ttc" id="classDrawer_html_a41ce4d11b78f5b4a199a57ec6f75f71b"><div class="ttname"><a href="classDrawer.html#a41ce4d11b78f5b4a199a57ec6f75f71b">Drawer::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdoc">Initializes the default drawing options. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:194</div></div>
+<div class="ttc" id="classDrawer_html_abe98b18449978bf13c2e3450d3104927"><div class="ttname"><a href="classDrawer.html#abe98b18449978bf13c2e3450d3104927">Drawer::_types</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _types</div><div class="ttdoc">Data types. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:150</div></div>
+<div class="ttc" id="structVarSet_html_a71243e98c2e0d942bc30951d3145f8a5"><div class="ttname"><a href="structVarSet.html#a71243e98c2e0d942bc30951d3145f8a5">VarSet::unit</a></div><div class="ttdeci">std::string unit</div><div class="ttdoc">Unit in which the variable is expressed. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:43</div></div>
+<div class="ttc" id="structVarSet_html"><div class="ttname"><a href="structVarSet.html">VarSet</a></div><div class="ttdoc">Structure that stores the settings for each variable. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:41</div></div>
+<div class="ttc" id="structDrawOpt_html_a6eba2416962ff38941ca96dc02b9c248"><div class="ttname"><a href="structDrawOpt.html#a6eba2416962ff38941ca96dc02b9c248">DrawOpt::marker_color</a></div><div class="ttdeci">int marker_color</div><div class="ttdoc">Marker color (TColor code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:36</div></div>
+<div class="ttc" id="classGeometryHandler_html"><div class="ttname"><a href="classGeometryHandler.html">GeometryHandler</a></div><div class="ttdoc">Stores the positions of all the requested MICE detectors. </div><div class="ttdef"><b>Definition:</b> GeometryHandler.hh:109</div></div>
+<div class="ttc" id="structDrawOpt_html_a336af8116d02d000ac621749db334e23"><div class="ttname"><a href="structDrawOpt.html#a336af8116d02d000ac621749db334e23">DrawOpt::fill_style</a></div><div class="ttdeci">int fill_style</div><div class="ttdoc">Fill pattern (TAttFill code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:32</div></div>
+<div class="ttc" id="classDrawer_html_abafb33fb44ebc34a3286ec7ef9b20b00"><div class="ttname"><a href="classDrawer.html#abafb33fb44ebc34a3286ec7ef9b20b00">Drawer::DrawDataSimStack</a></div><div class="ttdeci">void DrawDataSimStack(TH1F *hist_dat, TH1F *hist_sim, const std::string &amp;name, bool ratio=false, InfoBox *info=NULL)</div><div class="ttdoc">Draws superimposed data and simulation histograms. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:95</div></div>
+<div class="ttc" id="classDrawer_html_a181ebeb0c0759a1538181543f4547d9c"><div class="ttname"><a href="classDrawer.html#a181ebeb0c0759a1538181543f4547d9c">Drawer::operator=</a></div><div class="ttdeci">Drawer &amp; operator=(const Drawer &amp;dra)</div><div class="ttdoc">Equality operator. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:19</div></div>
+<div class="ttc" id="structVarSet_html_a58911102c3131dc511e8d5e06abe8381"><div class="ttname"><a href="structVarSet.html#a58911102c3131dc511e8d5e06abe8381">VarSet::label</a></div><div class="ttdeci">std::string label</div><div class="ttdoc">Label of the variable to be drawn. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:42</div></div>
+<div class="ttc" id="classDrawer_html_a080aed447aae22c4f40fa60776efb9a8"><div class="ttname"><a href="classDrawer.html#a080aed447aae22c4f40fa60776efb9a8">Drawer::SaveGIF</a></div><div class="ttdeci">void SaveGIF(const std::string &amp;name, const std::vector&lt; TCanvas * &gt; &amp;canv)</div><div class="ttdoc">Saves the canvases, in order, to a single GIF. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:285</div></div>
+<div class="ttc" id="structDrawOpt_html_a298e7eb29963ef430b1481044fb5487a"><div class="ttname"><a href="structDrawOpt.html#a298e7eb29963ef430b1481044fb5487a">DrawOpt::fill_alpha</a></div><div class="ttdeci">int fill_alpha</div><div class="ttdoc">Fill opacity (From 0=transparent to 1=opaque) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:34</div></div>
+<div class="ttc" id="classDrawer_html_a28e135af7a48509e7d236ee624c4088b"><div class="ttname"><a href="classDrawer.html#a28e135af7a48509e7d236ee624c4088b">Drawer::DrawDataSimInfo</a></div><div class="ttdeci">void DrawDataSimInfo(TH1F *hist_dat, TH1F *hist_sim, const std::string draw_opt=&quot;EMR&quot;)</div><div class="ttdoc">Produces an information box for a simulation vs data plot. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:224</div></div>
+<div class="ttc" id="classDrawer_html_afb31fa131fe876b57588c7e57b0d5bcf"><div class="ttname"><a href="classDrawer.html#afb31fa131fe876b57588c7e57b0d5bcf">Drawer::_options</a></div><div class="ttdeci">std::map&lt; std::string, DrawOpt &gt; _options</div><div class="ttdoc">Drawing options for each data type. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:152</div></div>
+<div class="ttc" id="structDrawOpt_html_a60e47592ba179d3a2072adb1f6a14243"><div class="ttname"><a href="structDrawOpt.html#a60e47592ba179d3a2072adb1f6a14243">DrawOpt::line_width</a></div><div class="ttdeci">int line_width</div><div class="ttdoc">Line width. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:31</div></div>
+<div class="ttc" id="structVarSet_html_a1864a7d34d3377fd27cc862fe8e9e275"><div class="ttname"><a href="structVarSet.html#a1864a7d34d3377fd27cc862fe8e9e275">VarSet::llim</a></div><div class="ttdeci">double llim</div><div class="ttdoc">Lower limit of the corresponding axis. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:44</div></div>
+<div class="ttc" id="structDrawOpt_html_ac30febc0796d5801121c1d12373dd6ca"><div class="ttname"><a href="structDrawOpt.html#ac30febc0796d5801121c1d12373dd6ca">DrawOpt::fill_color</a></div><div class="ttdeci">int fill_color</div><div class="ttdoc">Fill color (TColor code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:33</div></div>
+<div class="ttc" id="structVarSet_html_a599b36c412dfce27775ab7f9e221656b"><div class="ttname"><a href="structVarSet.html#a599b36c412dfce27775ab7f9e221656b">VarSet::ulim</a></div><div class="ttdeci">double ulim</div><div class="ttdoc">Upper limit of the corresponding axis. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:45</div></div>
+<div class="ttc" id="classDrawer_html_adee979b20aee4790351ae56d0ef92815"><div class="ttname"><a href="classDrawer.html#adee979b20aee4790351ae56d0ef92815">Drawer::_vars</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _vars</div><div class="ttdoc">Phase space variables. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:151</div></div>
+<div class="ttc" id="classDrawer_html_a0fffd6dc5cb9c325c2dd0d5cd9be76bf"><div class="ttname"><a href="classDrawer.html#a0fffd6dc5cb9c325c2dd0d5cd9be76bf">Drawer::_varsets</a></div><div class="ttdeci">std::map&lt; std::string, VarSet &gt; _varsets</div><div class="ttdoc">Drawing options for each data type. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:153</div></div>
+<div class="ttc" id="structDrawOpt_html_ae8cacd6c8a436ba2fc9655767293410f"><div class="ttname"><a href="structDrawOpt.html#ae8cacd6c8a436ba2fc9655767293410f">DrawOpt::line_color</a></div><div class="ttdeci">int line_color</div><div class="ttdoc">Line color (TColor code) </div><div class="ttdef"><b>Definition:</b> Drawer.hh:30</div></div>
+<div class="ttc" id="structDrawOpt_html"><div class="ttname"><a href="structDrawOpt.html">DrawOpt</a></div><div class="ttdoc">Structure that stores the drawing options of each data type. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:28</div></div>
+<div class="ttc" id="classDrawer_html_a5c6bd5690375e6fbcbb1fb1311a57f7a"><div class="ttname"><a href="classDrawer.html#a5c6bd5690375e6fbcbb1fb1311a57f7a">Drawer::DrawMICEModules</a></div><div class="ttdeci">void DrawMICEModules(const GeometryHandler &amp;geoh, const double &amp;miny, const double &amp;maxy)</div><div class="ttdoc">Draws the MICE beam line elements onto an evolution graph. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:262</div></div>
+<div class="ttc" id="classDrawer_html_aaf39954939613e8726d968524e70c0b4"><div class="ttname"><a href="classDrawer.html#aaf39954939613e8726d968524e70c0b4">Drawer::New2DHistogram</a></div><div class="ttdeci">TH2F * New2DHistogram(const std::string &amp;name, const std::string &amp;varx, const std::string &amp;vary) const </div><div class="ttdoc">Defines an appropriate TH1F to draw two of the phase space component. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:42</div></div>
+<div class="ttc" id="classDrawer_html"><div class="ttname"><a href="classDrawer.html">Drawer</a></div><div class="ttdoc">Stores the default drawing options and methods to produce ROOT plots. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:55</div></div>
+<div class="ttc" id="structVarSet_html_a9d4b2108f54f7031d1c89abd674757b0"><div class="ttname"><a href="structVarSet.html#a9d4b2108f54f7031d1c89abd674757b0">VarSet::nbins</a></div><div class="ttdeci">size_t nbins</div><div class="ttdoc">Number of bins. </div><div class="ttdef"><b>Definition:</b> Drawer.hh:46</div></div>
+<div class="ttc" id="classInfoBox_html"><div class="ttname"><a href="classInfoBox.html">InfoBox</a></div><div class="ttdoc">Stores the MICE run information to be printed as TPaveText. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:18</div></div>
+<div class="ttc" id="classDrawer_html_a4eb8d086fd51c4e753dadfa05ad0b99e"><div class="ttname"><a href="classDrawer.html#a4eb8d086fd51c4e753dadfa05ad0b99e">Drawer::~Drawer</a></div><div class="ttdeci">~Drawer()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> Drawer.cc:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 23 2018 20:35:04 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 25 2018 22:26:44 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

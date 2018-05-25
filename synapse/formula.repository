@@ -6,32 +6,22 @@
 \form#5:$A = QR$
 \form#6:$Q$
 \form#7:$R$
-\form#8:$N_1\times...\times N_n$
-\form#9:$(N_1+1)\times...\times(N_n+1)$
-\form#10:$\vec{B}$
-\form#11:$B_\perp(\rho, 0, z)$
-\form#12:$B_z(\rho, 0, z)$
-\form#13:$X_0$
-\form#14:$X' = MX$
-\form#15:$\Sigma' = M\Sigma M^{T}$
-\form#16:$M = M_n\cdots M_1$
-\form#17:$(x, p_x, y, p_y, p_z)$
-\form#18:$[\textrm{MeV}/c^2]$
-\form#19:$1\sigma$
-\form#20:$z$
-\form#21:$\epsilon_\perp$
-\form#22:$e_\alpha$
-\form#23:$\epsilon_\alpha$
-\form#24:$A_\alpha$
-\form#25:$\theta= r^2$
-\form#26:$\theta\propto r^2$
-\form#27:$\theta= a^2r^2$
-\form#28:$\theta= a^nr^n$
-\form#29:$\theta= r^2/a^2$
-\form#30:$x^{T}(T\Sigma^{-1}T^{T})x$
-\form#31:$x$
-\form#32:$T$
-\form#33:$\vec{x}^{T}(T\Sigma^{-1}T^{T})\vec{x}$
-\form#34:$\Sigma$
-\form#35:$R^2=\vec{x}^T\vec{x}$
-\form#36:$L^{2}$
+\form#8:$\theta= r^2/a^2$
+\form#9:$\vec{x}^{T}(T\Sigma^{-1}T^{T})\vec{x}$
+\form#10:$x$
+\form#11:$\Sigma$
+\form#12:$T$
+\form#13:$L^{2}$
+\form#14:$R^2=\vec{x}^T\vec{x}$
+\form#15:$N_1\times...\times N_n$
+\form#16:$(N_1+1)\times...\times(N_n+1)$
+\form#17:$\vec{B}$
+\form#18:$B_\perp(\rho, 0, z)$
+\form#19:$B_z(\rho, 0, z)$
+\form#20:$X_0$
+\form#21:$X' = MX$
+\form#22:$\Sigma' = M\Sigma M^{T}$
+\form#23:$M = M_n\cdots M_1$
+\form#24:$(x, p_x, y, p_y, p_z)$
+\form#25:$[\textrm{MeV}/c^2]$
+\form#26:$1\sigma$

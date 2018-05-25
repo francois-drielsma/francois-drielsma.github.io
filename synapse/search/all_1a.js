@@ -17,6 +17,7 @@ var searchData=
   ['_7edmaxwell',['~DMaxwell',['../classDMaxwell.html#a0550be3033492eee0ec7e50530a8ff35',1,'DMaxwell']]],
   ['_7edmultigaus',['~DMultiGaus',['../classDMultiGaus.html#a7fc24fe32b29d9688b923241558f2c57',1,'DMultiGaus']]],
   ['_7edpoisson',['~DPoisson',['../classDPoisson.html#ac9457d7a456d9160e811078a2f812e77',1,'DPoisson']]],
+  ['_7edrawer',['~Drawer',['../classDrawer.html#a4eb8d086fd51c4e753dadfa05ad0b99e',1,'Drawer']]],
   ['_7edspiral',['~DSpiral',['../classDSpiral.html#a0c1fd445b59f809d194281b9176fe61c',1,'DSpiral']]],
   ['_7edtfe',['~DTFE',['../classDTFE.html#aab818ff6275f0736855314977d09b37b',1,'DTFE']]],
   ['_7edtriangular',['~DTriangular',['../classDTriangular.html#afd58fcc324b18c05d0b85d093929b111',1,'DTriangular']]],

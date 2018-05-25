@@ -16,7 +16,7 @@ var searchData=
   ['removecolumn',['RemoveColumn',['../classMatrix.html#a337ef469c8a71439cf82ca1bfeb91063',1,'Matrix']]],
   ['removerow',['RemoveRow',['../classMatrix.html#a64136fdec8a24fefcb6b7c1936154957',1,'Matrix']]],
   ['resample',['Resample',['../namespaceMath.html#a13a48fc848bfd9fc89489a6570e4b21c',1,'Math']]],
-  ['resize',['Resize',['../classMatrix.html#af5539ab190d0827a87f261ed5c31e86f',1,'Matrix::Resize()'],['../classVector.html#a1471efd125729e51f91fbec5fdbf5457',1,'Vector::resize()']]],
+  ['resize',['resize',['../classVector.html#a1471efd125729e51f91fbec5fdbf5457',1,'Vector::resize()'],['../classMatrix.html#af5539ab190d0827a87f261ed5c31e86f',1,'Matrix::Resize()']]],
   ['righthanded',['RightHanded',['../namespaceMath.html#a81023333c834c076e510edf00fb9a062',1,'Math']]],
   ['rms',['RMS',['../namespaceMath.html#aacc3eb29ffe6ecc4bebf7f42adf1e0b0',1,'Math']]],
   ['rmserror',['RMSError',['../namespaceMath.html#a54b37dcd92488848f082cffefe30dfc7',1,'Math']]],

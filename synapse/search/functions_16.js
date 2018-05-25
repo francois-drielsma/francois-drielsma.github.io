@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../classDetectorGlobals.html#ac276c13dd7d5ec218d2c5005b965d62d',1,'DetectorGlobals']]]
+  ['x',['x',['../classDetectorGlobals.html#a2c434d021fd3ee02e5d668b3e0d17c6b',1,'DetectorGlobals']]]
 ];
