@@ -15,8 +15,7 @@ var indexSectionsWithContent =
   5: "_acdfiklmnorsuvz",
   6: "em",
   7: "bdmo",
-  8: "o",
-  9: "dr"
+  8: "o"
 };
 
 var indexSectionNames =
@@ -29,8 +28,7 @@ var indexSectionNames =
   5: "variables",
   6: "enums",
   7: "enumvalues",
-  8: "related",
-  9: "pages"
+  8: "related"
 };
 
 function convertToId(search)
