@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['back',['back',['../classVector.html#a26624eb01205cacf618c87774aaae538',1,'Vector']]],
+  ['beam',['Beam',['../classBeam.html',1,'Beam'],['../classBeam.html#aa2f4785d060499243482e165b6bcdd5f',1,'Beam::Beam()'],['../classBeam.html#aedd122cc5fe8651e61167ed129c88bcf',1,'Beam::Beam(const std::map&lt; std::string, std::vector&lt; double &gt;&gt; &amp;samples, const std::string &amp;name=&quot;&quot;, const double mass=105.66)'],['../classBeam.html#af105ca42d16dbb3b2bb8bb44b99a7c21',1,'Beam::Beam(const std::map&lt; std::string, std::vector&lt; double &gt;&gt; &amp;samples, const std::map&lt; std::string, std::vector&lt; double &gt;&gt; &amp;errors, const std::string &amp;name=&quot;&quot;, const double mass=105.66)'],['../classBeam.html#a9ba1fd152c26e16d365afb6af5fe3c30',1,'Beam::Beam(const Beam &amp;beam)']]],
+  ['beta',['Beta',['../classBeam.html#aa91aafbe08400230e97849c7c921c2fc',1,'Beam::Beta() const '],['../classBeam.html#a876424f58ce91fb18760699f2493bd5c',1,'Beam::Beta(const std::string axis) const '],['../classDetectorGlobals.html#a4386443c76e473b9e71c007e6c6f80e2',1,'DetectorGlobals::beta()']]],
+  ['bethebloch',['BetheBloch',['../classEnergyLoss.html#a50ed7966c821533e6ec377163bd9fc29',1,'EnergyLoss']]],
+  ['bin',['Bin',['../classBin.html',1,'Bin'],['../classBin.html#ab0c042b6a28914c9d4a5553881b83719',1,'Bin::Bin()'],['../classBin.html#a55f8e59d10dcd7ebf17427d1b87f98a9',1,'Bin::Bin(const std::vector&lt; size_t &gt; &amp;indices, const std::vector&lt; double &gt; &amp;lower, const std::vector&lt; double &gt; &amp;upper, const double &amp;content)'],['../classBin.html#a3cf6fd2d97b4217d38697ec20da3462a',1,'Bin::Bin(const Bin &amp;bin)']]],
+  ['binbybin',['binbybin',['../ReweightBeam_8cc.html#a2a3c0067e44c5ef3210a256d06c16b0fa9309c236e3d29106923a27b1b282af29',1,'ReweightBeam.cc']]],
+  ['boundingbox',['BoundingBox',['../classTDE.html#a8ba00b6a9add6c1fb0e5a8b16970f9b1',1,'TDE::BoundingBox()'],['../classVoronoi.html#aaa23b198160cddb5615a7033684dc9bd',1,'Voronoi::BoundingBox()'],['../namespaceMath.html#aafb7ef90dbbe4d68e8d349f7828b44a1',1,'Math::BoundingBox()']]]
+];

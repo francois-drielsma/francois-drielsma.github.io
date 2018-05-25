@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['mag',['mag',['../classVector.html#a571fe0c2efabd31f840af41e95e39cc8',1,'Vector']]],
+  ['mag2',['mag2',['../classVector.html#a4b0e2c049b6c1a9e3c0a81e315c59606',1,'Vector']]],
+  ['mahalanobis',['Mahalanobis',['../namespaceMath.html#a24581b6605652d0db8117ca7542a1b2c',1,'Math']]],
+  ['mahalanobissquared',['MahalanobisSquared',['../namespaceMath.html#a6bb7809076a6212de6652d3de9803f13',1,'Math']]],
+  ['main',['main',['../Amplitudes_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;Amplitudes.cc'],['../CompareSets_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;CompareSets.cc'],['../ConvertToJson_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ConvertToJson.cc'],['../DensityProfile_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;DensityProfile.cc'],['../ImportG4BL_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ImportG4BL.cc'],['../ImportMAUSData_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ImportMAUSData.cc'],['../ImportMAUSMinimal_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ImportMAUSMinimal.cc'],['../ImportMAUSSimulation_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ImportMAUSSimulation.cc'],['../PhaseSpace_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;PhaseSpace.cc'],['../Profiles_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;Profiles.cc'],['../ReweightBeam_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ReweightBeam.cc'],['../SystematicCorrections_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;SystematicCorrections.cc'],['../ToySimulation_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;ToySimulation.cc']]],
+  ['makestacktrace',['MakeStackTrace',['../classExceptions_1_1Exception.html#a831aca631c57cd95e1ac6a5359cda515',1,'Exceptions::Exception']]],
+  ['matrix',['Matrix',['../classMatrix.html#a9d567e3a121b1be0c3f9c461cab524fe',1,'Matrix::Matrix()'],['../classMatrix.html#abf63d3ac0888ab7871273ed7e9a9075c',1,'Matrix::Matrix(const size_t n)'],['../classMatrix.html#a53d04b1d199e935f1cc06fb0d98c3387',1,'Matrix::Matrix(const size_t m, const size_t n)'],['../classMatrix.html#a85a7ee1f44e7a3076f9819691ee21e9f',1,'Matrix::Matrix(const size_t m, const size_t n, const T &amp;value)'],['../classMatrix.html#a7f6086fd2ce9512f8264f616368538f6',1,'Matrix::Matrix(const std::vector&lt; T &gt; &amp;v)'],['../classMatrix.html#a08b679eb04a146fba6a67fb058a1dc0b',1,'Matrix::Matrix(const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;mat)'],['../classMatrix.html#aa6f2b59abaebd0c2f2c898304123c0ce',1,'Matrix::Matrix(const Matrix &amp;mat)']]],
+  ['max',['Max',['../namespaceMath.html#a7d13ee8d726326e2429e258907c7483b',1,'Math']]],
+  ['mcmethod',['MCMethod',['../classProbabilityContour.html#a63f460362c34dfcdcdae6f1014e3acb6',1,'ProbabilityContour']]],
+  ['mean',['Mean',['../classBeam.html#a978af668e1020947e369f301b9406429',1,'Beam::Mean()'],['../namespaceMath.html#ac137bfac3d0a501bed7f059bd22d1cc7',1,'Math::Mean()']]],
+  ['meanerror',['MeanError',['../namespaceMath.html#a3c7c8f9bfb49b3b885062d3c3d1680cf',1,'Math']]],
+  ['meanmerror',['MeanMError',['../namespaceMath.html#aff62acd624edde8ba5fda335e11e41c5',1,'Math']]],
+  ['meanserror',['MeanSError',['../namespaceMath.html#a7c073b49bb7f0f8bfe36f2ca768ac0fd',1,'Math']]],
+  ['mechanicall',['MechanicalL',['../classBeam.html#a6365161fba67ae8430fbcba533bf08b4',1,'Beam']]],
+  ['median',['Median',['../namespaceMath.html#aa6a892a2153f162d5c4bdbdad53b9b32',1,'Math']]],
+  ['medianserror',['MedianSError',['../namespaceMath.html#ace7ad170d7a7d2240c2892085e1d3467',1,'Math']]],
+  ['merror',['merror',['../classVariable.html#ac27a1ab9ca5cc94f4a3c202d2edd8c62',1,'Variable::merror()'],['../classVariable.html#a004efec7ee9c9e279c2fd6d06c0e7b17',1,'Variable::merror() const ']]],
+  ['meshing',['Meshing',['../classDensityEstimator.html#a51981a3936e1d1066070315f8e6aedd5',1,'DensityEstimator::Meshing()'],['../classInterpolator.html#a13d04cda99cc42f52ca30810d3bb1d04',1,'Interpolator::Meshing()'],['../classOptimalBinning.html#a444434f52f1b4579c5c11a94504151cb',1,'OptimalBinning::Meshing()'],['../classTDE.html#a779e7d44bda432344be5f2c3552921b4',1,'TDE::Meshing()']]],
+  ['min',['Min',['../namespaceMath.html#a27649e6d4226efdf04531ab93d64ac00',1,'Math']]],
+  ['mode',['Mode',['../namespaceMath.html#a33978932aba3be0fcdf7a5c4425e87ed',1,'Math']]],
+  ['mout',['mout',['../classPitch.html#adb54ae1f09449ea3ea6094b323c6ddc6',1,'Pitch::mout()'],['../classPitch.html#a41e0af49c39045b7b63a66d008402816',1,'Pitch::mout(errorLevel level)'],['../classPitch.html#a3b9c1bdb31deadc1d948ce101378c1ce',1,'Pitch::mout(Exceptions::exceptionLevel level)']]],
+  ['multiplicable',['Multiplicable',['../namespaceAssert.html#a579cf74b9152fb45afa9599cdcc6ba2e',1,'Assert']]]
+];
