@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>SynAPSE: src/ReweightBeam.cc File Reference</title>
+<title>SynAPSE: scripts/ReweightBeam.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_53e6fa9553ac22a5646d2a2b2d7b97a1.html">scripts</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -109,8 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;Globals.hh&quot;</code><br/>
 <code>#include &quot;ProgressBar.hh&quot;</code><br/>
 <code>#include &quot;InfoBox.hh&quot;</code><br/>
-<code>#include &quot;Beam.hh&quot;</code><br/>
-<code>#include &quot;<a class="el" href="PlotTools_8hh_source.html">PlotTools.hh</a>&quot;</code><br/>
+<code>#include &quot;Bunch.hh&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -127,9 +126,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac65a14ab6575f6eb60243eab9e84d622"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReweightBeam_8cc.html#ac65a14ab6575f6eb60243eab9e84d622">CustomAmplitudes</a> (const <a class="el" href="classBeam.html">Beam</a> &amp;beam, const <a class="el" href="classMatrix.html">Matrix</a>&lt; double &gt; &amp;covmat)</td></tr>
-<tr class="memdesc:ac65a14ab6575f6eb60243eab9e84d622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the amplitudes of particles in the metric defined by covmat.  <a href="#ac65a14ab6575f6eb60243eab9e84d622">More...</a><br/></td></tr>
-<tr class="separator:ac65a14ab6575f6eb60243eab9e84d622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22b78bce26efc53ee678cb574139aa1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReweightBeam_8cc.html#ac22b78bce26efc53ee678cb574139aa1">CustomAmplitudes</a> (const <a class="el" href="classBeam_1_1Bunch.html">Beam::Bunch</a> &amp;beam, const <a class="el" href="classMatrix.html">Matrix</a>&lt; double &gt; &amp;covmat)</td></tr>
+<tr class="memdesc:ac22b78bce26efc53ee678cb574139aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the amplitudes of particles in the metric defined by covmat.  <a href="#ac22b78bce26efc53ee678cb574139aa1">More...</a><br/></td></tr>
+<tr class="separator:ac22b78bce26efc53ee678cb574139aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReweightBeam_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br/></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,14 +182,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac65a14ab6575f6eb60243eab9e84d622"></a>
+<a class="anchor" id="ac22b78bce26efc53ee678cb574139aa1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;double&gt; CustomAmplitudes </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classBeam.html">Beam</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classBeam_1_1Bunch.html">Beam::Bunch</a> &amp;&#160;</td>
           <td class="paramname"><em>beam</em>, </td>
         </tr>
         <tr>
@@ -257,7 +256,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:51 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

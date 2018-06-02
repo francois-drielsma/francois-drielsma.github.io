@@ -8,6 +8,7 @@ var searchData=
   ['load',['Load',['../classDetectorGlobals.html#af56380c66496bea7ea803b6aa1f76c50',1,'DetectorGlobals']]],
   ['loadcommandline',['LoadCommandLine',['../classGlobals.html#a3628e4aaa077ca09ee99af93d6cd3328',1,'Globals']]],
   ['loadfile',['LoadFile',['../classGlobals.html#a32795de053146feeae5ab22c8f49a67b',1,'Globals']]],
+  ['loadgeometry',['LoadGeometry',['../classGlobals.html#ae08018fd145a0a31efbea3b459f12492',1,'Globals']]],
   ['localreachability',['LocalReachability',['../classLocalReachability.html#a78eb04cb48950e6a88bd9dd1b471fec3',1,'LocalReachability::LocalReachability()'],['../classLocalReachability.html#a9e61e5b37ce17fbf73c468a2a089ad3c',1,'LocalReachability::LocalReachability(const std::vector&lt; std::vector&lt; double &gt;&gt; &amp;points, const size_t k)'],['../classLocalReachability.html#a3bdd455c2b96f0a7c1510111d6190242',1,'LocalReachability::LocalReachability(const LocalReachability &amp;lr)']]],
   ['lowerbound',['LowerBound',['../classDFunction.html#a37cb605e2d07eb845265af918c72db78',1,'DFunction']]],
   ['lowerbounds',['LowerBounds',['../classDFunction.html#a43f346f56fc82df7b3c253406a4fccf9',1,'DFunction']]],

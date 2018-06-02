@@ -25,3 +25,7 @@
 \form#24:$(x, p_x, y, p_y, p_z)$
 \form#25:$[\textrm{MeV}/c^2]$
 \form#26:$1\sigma$
+\form#27:$ \vec{x} = \vec{y}\times\vec{z}$
+\form#28:$\vec{z}$
+\form#29:$\vec{y}$
+\form#30:$\vec{x}$

@@ -230,12 +230,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9031a3777f52740894705948178623f9"><td class="memItemLeft" align="right" valign="top">TEllipse *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBeam.html#a9031a3777f52740894705948178623f9">RobustEllipse</a> (const std::string &amp;vara, const std::string &amp;varb, const double p=.39347) const </td></tr>
 <tr class="memdesc:a9031a3777f52740894705948178623f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the n-RMS robust ellipse of a sample of two variables.  <a href="#a9031a3777f52740894705948178623f9">More...</a><br/></td></tr>
 <tr class="separator:a9031a3777f52740894705948178623f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ed4a5dce58fa1a9301c478243f230d"><td class="memItemLeft" align="right" valign="top">TH1F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBeam.html#a57ed4a5dce58fa1a9301c478243f230d">Histogram</a> (const std::string &amp;var, double min, double max) const </td></tr>
-<tr class="memdesc:a57ed4a5dce58fa1a9301c478243f230d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 1D distrubution of the requested variable.  <a href="#a57ed4a5dce58fa1a9301c478243f230d">More...</a><br/></td></tr>
-<tr class="separator:a57ed4a5dce58fa1a9301c478243f230d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafcf2eaf40c9d7f1113f2cf3302dbead"><td class="memItemLeft" align="right" valign="top">TH2F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBeam.html#aafcf2eaf40c9d7f1113f2cf3302dbead">Histogram</a> (const std::string &amp;vara, double mina, double maxa, const std::string &amp;varb, double minb, double maxb) const </td></tr>
-<tr class="memdesc:aafcf2eaf40c9d7f1113f2cf3302dbead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 2D distrubution of the requested variable.  <a href="#aafcf2eaf40c9d7f1113f2cf3302dbead">More...</a><br/></td></tr>
-<tr class="separator:aafcf2eaf40c9d7f1113f2cf3302dbead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b60e6ad9a78765966f5c86fc04a8cdc"><td class="memItemLeft" align="right" valign="top">TH1F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBeam.html#a8b60e6ad9a78765966f5c86fc04a8cdc">Histogram</a> (const std::string &amp;var, double min=0, double max=0) const </td></tr>
+<tr class="memdesc:a8b60e6ad9a78765966f5c86fc04a8cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 1D distrubution of the requested variable.  <a href="#a8b60e6ad9a78765966f5c86fc04a8cdc">More...</a><br/></td></tr>
+<tr class="separator:a8b60e6ad9a78765966f5c86fc04a8cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fee748970d982c8044f28f36d5a0b4"><td class="memItemLeft" align="right" valign="top">TH2F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBeam.html#a98fee748970d982c8044f28f36d5a0b4">Histogram</a> (const std::string &amp;vara, const std::string &amp;varb, double mina=0, double maxa=0, double minb=0, double maxb=0) const </td></tr>
+<tr class="memdesc:a98fee748970d982c8044f28f36d5a0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 2D distrubution of the requested variable.  <a href="#a98fee748970d982c8044f28f36d5a0b4">More...</a><br/></td></tr>
+<tr class="separator:a98fee748970d982c8044f28f36d5a0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f67fe76474535db9bfff4bea9cf20a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTScatter.html">TScatter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBeam.html#a1f67fe76474535db9bfff4bea9cf20a9">AmplitudeScatter</a> (const std::string &amp;vara, const std::string &amp;varb) const </td></tr>
 <tr class="memdesc:a1f67fe76474535db9bfff4bea9cf20a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 2D scatter plot of particle amplitudes.  <a href="#a1f67fe76474535db9bfff4bea9cf20a9">More...</a><br/></td></tr>
 <tr class="separator:a1f67fe76474535db9bfff4bea9cf20a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1012,7 +1012,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a57ed4a5dce58fa1a9301c478243f230d"></a>
+<a class="anchor" id="a8b60e6ad9a78765966f5c86fc04a8cdc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1026,13 +1026,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
+          <td class="paramname"><em>min</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
+          <td class="paramname"><em>max</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1055,7 +1055,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aafcf2eaf40c9d7f1113f2cf3302dbead"></a>
+<a class="anchor" id="a98fee748970d982c8044f28f36d5a0b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1068,18 +1068,6 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>mina</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maxa</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>varb</em>, </td>
         </tr>
@@ -1087,13 +1075,25 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>minb</em>, </td>
+          <td class="paramname"><em>mina</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maxb</em>&#160;</td>
+          <td class="paramname"><em>maxa</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minb</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxb</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1107,9 +1107,9 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vara</td><td>First variable of which to draw the distribution </td></tr>
+    <tr><td class="paramname">varb</td><td>Second variable of which to draw the distribution </td></tr>
     <tr><td class="paramname">mina</td><td>Minimum of the range of vara </td></tr>
     <tr><td class="paramname">maxa</td><td>Maximum of the range of vara </td></tr>
-    <tr><td class="paramname">varb</td><td>Second variable of which to draw the distribution </td></tr>
     <tr><td class="paramname">minb</td><td>Minimum of the range of varb </td></tr>
     <tr><td class="paramname">maxb</td><td>Maximum of the range of varb</td></tr>
   </table>
@@ -2603,7 +2603,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:51 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 27 2018 17:34:01 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

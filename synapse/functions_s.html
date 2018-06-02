@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,14 +128,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
-<li>Sample()
-: <a class="el" href="classBeam.html#a00ca83bbd790742256f13affd81bdd38">Beam</a>
+<li>S()
+: <a class="el" href="classBeam_1_1BunchData.html#a49ac2b747356200b51858877f6a3d5cc">Beam::BunchData</a>
 </li>
-<li>SampleArray()
-: <a class="el" href="classBeam.html#a956883e8092340f9a1e8be97dd12cc10">Beam</a>
+<li>Samples()
+: <a class="el" href="classBeam_1_1Bunch.html#a3947b86cd5498a14bcc9bad9d75aa255">Beam::Bunch</a>
+, <a class="el" href="classBeam_1_1BunchData.html#a329d86fdc97786a5708f3d269ccc49ff">Beam::BunchData</a>
+</li>
+<li>Save()
+: <a class="el" href="classScatterGraph.html#a9a0b9df394fc967cc5533bb193e1fcb0">ScatterGraph</a>
 </li>
 <li>SaveGIF()
-: <a class="el" href="classDrawer.html#a080aed447aae22c4f40fa60776efb9a8">Drawer</a>
+: <a class="el" href="classBeam_1_1Drawer.html#a7d0ace22f2d64ea9496732f262e29ed7">Beam::Drawer</a>
+</li>
+<li>SaveMultiGraph()
+: <a class="el" href="classBeam_1_1Drawer.html#a47cc79129e415d5cc88ff1b2dd95aecf">Beam::Drawer</a>
+</li>
+<li>SaveStack()
+: <a class="el" href="classBeam_1_1Drawer.html#a2ac59bdd090627fe83fc3a935551d5e3">Beam::Drawer</a>
 </li>
 <li>Scale()
 : <a class="el" href="classHistogram.html#ade421f475afb8d8fd03621373daa1c90">Histogram</a>
@@ -146,8 +156,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Scatter()
 : <a class="el" href="classScattering.html#ade7446a49516ecdb8470f00ed2643ef1">Scattering</a>
 </li>
-<li>ScatterBeam()
-: <a class="el" href="classScattering.html#a2992cd623e28f739fb6641758439fbac">Scattering</a>
+<li>ScatterBunch()
+: <a class="el" href="classScattering.html#ac5ec8e8145e60ae72efe25dc15c55df5">Scattering</a>
+</li>
+<li>ScatterGraph()
+: <a class="el" href="classScatterGraph.html#a50282f3de369697cf34018773eed43b0">ScatterGraph</a>
 </li>
 <li>Scattering()
 : <a class="el" href="classScattering.html#a197bb23c07e9035c0b9f30f382b42eb3">Scattering</a>
@@ -155,14 +168,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ScottBandwidth()
 : <a class="el" href="classKDE.html#a8c1c01867e19541ef67aa92b2a54cb3f">KDE</a>
 </li>
-<li>serror()
-: <a class="el" href="classVariable.html#a7484bb815bff333b4111d6758f806b25">Variable</a>
-</li>
 <li>SetAlpha()
 : <a class="el" href="classAlphaComplex.html#a48f9c205ce118f0a5b5e9c3cc98063a4">AlphaComplex</a>
 </li>
+<li>SetAmplitudeQuantile()
+: <a class="el" href="classBeam_1_1Bunch.html#aad2e9448df226001c26a6297a4fddb80">Beam::Bunch</a>
+</li>
 <li>SetAmplitudes()
-: <a class="el" href="classBeam.html#aaae76e4738dee1644757d3721bb3495a">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a86e4443022cd15bc578b22d825eefee0">Beam::Bunch</a>
 </li>
 <li>SetAngles()
 : <a class="el" href="classDetectorGlobals.html#a78779056a67428304d1c0d0608bd538d">DetectorGlobals</a>
@@ -179,8 +192,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetCoordinates()
 : <a class="el" href="classVertex.html#a6103bde6e224c9d5e360e31ffd8b7857">Vertex</a>
 </li>
+<li>SetCoreFraction()
+: <a class="el" href="classBeam_1_1Bunch.html#af3bd4b4c538d914ddb236f6af067130d">Beam::Bunch</a>
+, <a class="el" href="classBeam_1_1Stream.html#a3325222dadbaf4b9d3aea40a446156fa">Beam::Stream</a>
+</li>
+<li>SetCoreSize()
+: <a class="el" href="classBeam_1_1Bunch.html#ae92e5fd7335e1329d59c0efe09e15b38">Beam::Bunch</a>
+, <a class="el" href="classBeam_1_1Stream.html#a70f43f52f6a14fb12b5cb5dc22c47239">Beam::Stream</a>
+</li>
+<li>SetCoreVolume()
+: <a class="el" href="classBeam_1_1Bunch.html#a14c2277a024d5d8e21c1ead392eda8f9">Beam::Bunch</a>
+</li>
 <li>SetCorrectedAmplitudes()
-: <a class="el" href="classBeam.html#a2c03bcd54de5359d84b2da29a699a480">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a3e1ba9d25f7ccb30c7e9b0cee15d8436">Beam::Bunch</a>
 </li>
 <li>SetCurrentTime()
 : <a class="el" href="classProgressBar.html#ad4e5e822fb688d661c23f7bc0160a0c6">ProgressBar</a>
@@ -192,10 +216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classGlobal.html#a4f846a2207f41aceda0b30aeebe45b8f">Global</a>
 </li>
 <li>SetEmittance()
-: <a class="el" href="classBeam.html#a207d50e0b450ece57e65f666b0ce9c36">Beam</a>
-</li>
-<li>SetEmittanceErrors()
-: <a class="el" href="classBeam.html#ae6250aba8711594d47984b71b59e92e8">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a940480120490615f9af48ea5923e6ecb">Beam::Bunch</a>
 </li>
 <li>setException()
 : <a class="el" href="classPitch.html#a8c2f7417a870d46c8a52146113e07866">Pitch</a>
@@ -203,11 +224,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetFactor()
 : <a class="el" href="classScattering.html#ac3a4d2e662a5f9530d4ee753d1de9cc8">Scattering</a>
 </li>
+<li>SetFraction()
+: <a class="el" href="classBeam_1_1Bunch.html#a20a606cb1879e60f667e236b038384d1">Beam::Bunch</a>
+</li>
 <li>SetGeneralisedAmplitudes()
-: <a class="el" href="classBeam.html#a6b3a180119cb0c7cf4951959cd53fb63">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a7d645f153e1b64d7bde2c7e63a85bcf4">Beam::Bunch</a>
 </li>
 <li>SetIndices()
 : <a class="el" href="classVertex.html#ad51bb3de387b5f3418a38eddd3f6ee0b">Vertex</a>
+</li>
+<li>SetInfoBox()
+: <a class="el" href="classBeam_1_1Drawer.html#aaebccbfc4a993704e6fffbbf2fded20b">Beam::Drawer</a>
 </li>
 <li>setLog()
 : <a class="el" href="classPitch.html#af4efca9aa7828815febc1aeaa04ab56c">Pitch</a>
@@ -222,68 +249,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classDFunction.html#ac30ba304dc19bb2823c922a917ff9532">DFunction</a>
 </li>
 <li>SetMarkerSize()
-: <a class="el" href="classTScatter.html#a49afe8f8168fcba29d39dbe2a04306cf">TScatter</a>
+: <a class="el" href="classScatterGraph.html#aa366893ee7c70911e402b963574d2c5b">ScatterGraph</a>
 </li>
 <li>SetMarkerStyle()
-: <a class="el" href="classTScatter.html#ae422251c76ae088d655783fc94d746a2">TScatter</a>
+: <a class="el" href="classScatterGraph.html#ab763b0b989a350dbe36f6ef2f4e80c48">ScatterGraph</a>
 </li>
 <li>SetMaximum()
-: <a class="el" href="classTScatter.html#ab2a27a75bd3069898b6f407e0feeae16">TScatter</a>
+: <a class="el" href="classScatterGraph.html#aa91c5630fb4d67a0f76acae2e69bfb98">ScatterGraph</a>
+</li>
+<li>SetMaxSize()
+: <a class="el" href="classScatterGraph.html#a1e4c0b0cfdfd703d1a916389b2f27014">ScatterGraph</a>
 </li>
 <li>SetMCDAmplitudes()
-: <a class="el" href="classBeam.html#ab3234e1fc7f564635d1d21285e5fc9b6">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a623890d0875923fbd6ef7115b9b4405b">Beam::Bunch</a>
 </li>
 <li>SetMCVertexArray()
 : <a class="el" href="classProbabilityContour.html#acd892b5d74fcca2fb9c7eac2f65d889b">ProbabilityContour</a>
+</li>
+<li>SetMError()
+: <a class="el" href="classBeam_1_1Variable.html#a3259a50aa1aac3e7b907ecd5e00c938c">Beam::Variable</a>
 </li>
 <li>SetMessage()
 : <a class="el" href="classExceptions_1_1Exception.html#a12494ced8b1a1c440789a3bed33f739f">Exceptions::Exception</a>
 </li>
 <li>SetMICEDefault()
-: <a class="el" href="classAperture.html#af02945c2a88d1de7209a590081997c52">Aperture</a>
+: <a class="el" href="classBeam_1_1Aperture.html#af647b0883d9e5e476fbda7931a7d0c1b">Beam::Aperture</a>
 </li>
 <li>SetMinimum()
-: <a class="el" href="classTScatter.html#a7016a8c08ff9066f6b9e4ea557711fc2">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a3422dce09b7688709bfe0694909ad8a2">ScatterGraph</a>
 </li>
 <li>SetName()
-: <a class="el" href="classBeam.html#aa1b0fb0e8c4173d0f7e053ca9661a251">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#ae593517e0c8c9fe5ff480cf9228467af">Beam::Bunch</a>
 , <a class="el" href="classDensityEstimator.html#a1f952cfb45b8ebd326c6366252530ce3">DensityEstimator</a>
 , <a class="el" href="classDFunction.html#ad33077ee628203af7806a74eb2defa66">DFunction</a>
+, <a class="el" href="classScatterGraph.html#a138320a5cd1ff393b25ac662c439fb61">ScatterGraph</a>
 </li>
-<li>SetNEmittance()
-: <a class="el" href="classBeam.html#a2aa127c531371125f90308b33cd247de">Beam</a>
-</li>
-<li>SetNEmittanceErrors()
-: <a class="el" href="classBeam.html#a6c38740aa94dac26e3ce19e3ac73cf30">Beam</a>
+<li>SetNormEmittance()
+: <a class="el" href="classBeam_1_1Bunch.html#aae09c661ec17fdb6c12d81dfdc5b2086">Beam::Bunch</a>
 </li>
 <li>SetOpacity()
 : <a class="el" href="classInfoBox.html#a0f5c9e6f55ccfdfaccbb5b98501f7404">InfoBox</a>
+</li>
+<li>SetOrder()
+: <a class="el" href="classScatterGraph.html#a7ae7ae2c43280570c55088178bd4a543">ScatterGraph</a>
 </li>
 <li>setOutputs()
 : <a class="el" href="classPitch.html#ad284dcba612c1b6be000f4c6874f1dad">Pitch</a>
 </li>
 <li>SetPoint()
-: <a class="el" href="classTScatter.html#a99ab28e07ee2d02b382bed5fa41ae750">TScatter</a>
+: <a class="el" href="classScatterGraph.html#aa142297d70b46264aa2b4de1dc01ae5e">ScatterGraph</a>
 </li>
 <li>SetPointArray()
-: <a class="el" href="classHull.html#ae275685f92d9d886d86dc5b6f27672ab">Hull</a>
+: <a class="el" href="classHull.html#ad9416d266a1203b2939e8b0c8d1d7a84">Hull</a>
 </li>
 <li>SetPoints()
-: <a class="el" href="classTScatter.html#a915409f61fb365508cd19074c5cbb828">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a6c3d73116830ca669751ccb8661bf633">ScatterGraph</a>
 </li>
 <li>SetPosition()
-: <a class="el" href="classDetectorGlobals.html#af6d3e713ee7d5a67749e27f177132dc5">DetectorGlobals</a>
-, <a class="el" href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">InfoBox</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a77ffbc818b11a94bffe4e96f040125f6">Beam::Bunch</a>
+, <a class="el" href="classDetectorGlobals.html#af6d3e713ee7d5a67749e27f177132dc5">DetectorGlobals</a>
+, <a class="el" href="classInfoBox.html#a3faabaa59f5d7abe993e685a1c3ab7bb">InfoBox</a>
 </li>
 <li>SetRange()
-: <a class="el" href="classDFunction.html#a53d34dc798eb988abcf9540a7b683e29">DFunction</a>
-, <a class="el" href="classTScatter.html#a99375ce5fe09d60fab515bbda03b98ac">TScatter</a>
+: <a class="el" href="classDFunction.html#a243fc7eeb8799fc154a2607521f09fc7">DFunction</a>
+, <a class="el" href="classScatterGraph.html#ae180ee389e582d4a77e2142bf5710b03">ScatterGraph</a>
 </li>
 <li>SetRunName()
-: <a class="el" href="classExtractor.html#a2c5011bec0d2d20cf5c76bbe851fe709">Extractor</a>
+: <a class="el" href="classBeam_1_1Extractor.html#a8689b4ac5a9a8f26a03f44ba149d0003">Beam::Extractor</a>
 </li>
 <li>SetSeed()
 : <a class="el" href="classScattering.html#ab066ab051540c9d157f8423ea20c432c">Scattering</a>
+</li>
+<li>SetSError()
+: <a class="el" href="classBeam_1_1Variable.html#a69481aa6cc7d016406ffb84d564b1dfb">Beam::Variable</a>
 </li>
 <li>setStandardOutputs()
 : <a class="el" href="classPitch.html#a8401d71e121beedecfbd53b07a2e6903">Pitch</a>
@@ -295,7 +333,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classEnergyLoss.html#ae78499eaaa13b496ffd73c97e7f3dea5">EnergyLoss</a>
 </li>
 <li>SetStyle()
-: <a class="el" href="classDrawer.html#acbed2f8862f6713122e673d92430208f">Drawer</a>
+: <a class="el" href="classBeam_1_1Drawer.html#aff9b8d080b13a777d5453214065d777d">Beam::Drawer</a>
+</li>
+<li>SetSubEmittance()
+: <a class="el" href="classBeam_1_1Bunch.html#ac3fd45871db7be71dcfe1909340de677">Beam::Bunch</a>
 </li>
 <li>SetTerminalWidth()
 : <a class="el" href="classProgressBar.html#acf7bd53e78b559a89cce032fd952e965">ProgressBar</a>
@@ -306,13 +347,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetTitle()
 : <a class="el" href="classDFunction.html#ab5f76b3bebb4ff45c40ff6e1f721e5d6">DFunction</a>
-, <a class="el" href="classTScatter.html#a497ee0469bc0b9fc6cc9ac22b45780ef">TScatter</a>
+, <a class="el" href="classScatterGraph.html#afddb1c96b887ff27c501cef902929e6c">ScatterGraph</a>
 </li>
 <li>SetTwiss()
-: <a class="el" href="classBeam.html#a5627fe5100295224f6b7a979e9bfcbc9">Beam</a>
-</li>
-<li>SetTwissErrors()
-: <a class="el" href="classBeam.html#abaad685b13fa0e4c123bfc885583a515">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#ae7c366fddfce5d754c9b566ea2b65b6d">Beam::Bunch</a>
 </li>
 <li>SetUpperBound()
 : <a class="el" href="classDFunction.html#a213a4786114995e7e1a159e97056c6c0">DFunction</a>
@@ -321,7 +359,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classDFunction.html#a82efb922dad6c5afa5872c0490f39122">DFunction</a>
 </li>
 <li>SetValue()
-: <a class="el" href="classVertex.html#ad7d3cd3b00551bd866001b8078859997">Vertex</a>
+: <a class="el" href="classBeam_1_1Variable.html#a79fff9f2affc1c58a3f94654cbe613cd">Beam::Variable</a>
+, <a class="el" href="classVertex.html#ad7d3cd3b00551bd866001b8078859997">Vertex</a>
+</li>
+<li>SetVariableLimits()
+: <a class="el" href="classBeam_1_1Drawer.html#aceb732f76f922c40296e1bedeb2b9c51">Beam::Drawer</a>
+</li>
+<li>SetVariableSettings()
+: <a class="el" href="classBeam_1_1Drawer.html#a1e4fd6f3aff5c973c2ec93b6f5cd27b2">Beam::Drawer</a>
 </li>
 <li>SetVerbosityLevel()
 : <a class="el" href="classProgressBar.html#a6ff0bc3b1847cfd5676987ca569b84ce">ProgressBar</a>
@@ -336,7 +381,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classHull.html#a6e12f4f5f1f71d81b3b5b661227247b8">Hull</a>
 </li>
 <li>SetVoronoiVolumes()
-: <a class="el" href="classBeam.html#a48b012dc047ea7503920d155c23d07ad">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a61a312456bc51389d9652f3722de7f64">Beam::Bunch</a>
 </li>
 <li>SetWhat()
 : <a class="el" href="classExceptions_1_1Exception.html#ad8908fb63bfff0f8fbf3b46dbf0659c7">Exceptions::Exception</a>
@@ -345,19 +390,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classExceptions_1_1Exception.html#a83c063f53ddb29dd38535f6cebcbd774">Exceptions::Exception</a>
 </li>
 <li>SetXaxisTitle()
-: <a class="el" href="classTScatter.html#a49651455bc68bec98b8bc403ed9c2194">TScatter</a>
+: <a class="el" href="classScatterGraph.html#acce56728f2447992127cfed7393e9a16">ScatterGraph</a>
 </li>
 <li>SetYaxisTitle()
-: <a class="el" href="classTScatter.html#a1b5fc15302bfc8fd864b63cecd8e9a62">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a7cab59ef47dbc8b9175366caf05bef78">ScatterGraph</a>
 </li>
 <li>SilvermanBandwidth()
 : <a class="el" href="classKDE.html#ab8e0739316262aeaba4d35bccc980a2e">KDE</a>
 </li>
 <li>SimplexInterpolator()
-: <a class="el" href="classSimplexInterpolator.html#a98420e86919d49843a329f7a3e400171">SimplexInterpolator</a>
+: <a class="el" href="classSimplexInterpolator.html#abf1507509c2da3edb3e13365284e63bb">SimplexInterpolator</a>
 </li>
 <li>SimplexVolume()
 : <a class="el" href="classVoronoi.html#abc99dde99186f25a125e792a5aa811b8">Voronoi</a>
+</li>
+<li>Size()
+: <a class="el" href="classBeam_1_1Bunch.html#a829288a678d4529f860a8848ee0971bf">Beam::Bunch</a>
+, <a class="el" href="classBeam_1_1BunchData.html#af88d5efc8b71f1b42b72e50509803de6">Beam::BunchData</a>
+, <a class="el" href="classBeam_1_1Stream.html#acbd92969316808fc103033d942e9b84c">Beam::Stream</a>
 </li>
 <li>size()
 : <a class="el" href="classGrid.html#ad9d5e35b81b110cc8c6ff4b4a1a0a3e3">Grid</a>
@@ -386,14 +436,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>stdout
 : <a class="el" href="classPitch.html#aac651b52a3f9bf2b7f891f3ef1ad0d6b">Pitch</a>
 </li>
-<li>SubBeam()
-: <a class="el" href="classBeam.html#aa1351384e5830d2e6a274c61975127c4">Beam</a>
+<li>Stream()
+: <a class="el" href="classBeam_1_1Stream.html#ad895eb4d3565944de74c097599501e1a">Beam::Stream</a>
+</li>
+<li>SubEmittance()
+: <a class="el" href="classBeam_1_1Bunch.html#a80d4a754a05a773885ec5e939b13ecbd">Beam::Bunch</a>
+</li>
+<li>SummaryStatistic()
+: <a class="el" href="classBeam_1_1Bunch.html#a9c21db8162d4a140111fa82669f7eaa8">Beam::Bunch</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:53 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

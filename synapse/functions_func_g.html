@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,13 +128,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>Gamma()
-: <a class="el" href="classBeam.html#abde439fd8e3161f1d380e0242e4e49b5">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a588d3197b1c5553585ff47a6fbe653d6">Beam::Bunch</a>
 </li>
 <li>gamma()
 : <a class="el" href="classDetectorGlobals.html#a6d28e4976782d72cdbdd5ff79ca81bfc">DetectorGlobals</a>
 </li>
 <li>GeometryHandler()
 : <a class="el" href="classGeometryHandler.html#ae30bb732f2f45937a37644b7dc4395c5">GeometryHandler</a>
+</li>
+<li>Get()
+: <a class="el" href="classBeam_1_1Extractor.html#a8f23e51330ad8b613d2cb5fdd42b38da">Beam::Extractor</a>
 </li>
 <li>GetAlpha()
 : <a class="el" href="classProbabilityContour.html#afbacbc907844752b81cb7e18ffc3355e">ProbabilityContour</a>
@@ -183,6 +186,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetBoxVolume()
 : <a class="el" href="classProbabilityContour.html#ac628b9d2dba7204f26e08e987134fefc">ProbabilityContour</a>
 </li>
+<li>GetBunch()
+: <a class="el" href="classBeam_1_1Extractor.html#a2a4251e9176036239318d650910ca440">Beam::Extractor</a>
+</li>
 <li>GetCell()
 : <a class="el" href="classGrid.html#a1433d229f6ff7d417a64a14ab6fb41e3">Grid</a>
 , <a class="el" href="classTDE.html#ab785e41b9d099a45d9a3ef6c1815463a">TDE</a>
@@ -223,6 +229,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetCWPoints()
 : <a class="el" href="classHull.html#a8f048589234388c44357ed9305bd6812">Hull</a>
 </li>
+<li>GetDataFiles()
+: <a class="el" href="classGlobals.html#a8480c391ba02b4243d067fa6a6b3beed">Globals</a>
+</li>
 <li>GetDimension()
 : <a class="el" href="classAlphaComplex.html#a90818109d4ecfe88ddc9cfe26061844b">AlphaComplex</a>
 , <a class="el" href="classBin.html#adabbd9f026788de6708cf9bda9ca0ce3">Bin</a>
@@ -242,19 +251,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetEntries()
 : <a class="el" href="classHistogram.html#a6b2819d4e0102e47a3a2ef81dde7dbdd">Histogram</a>
 </li>
+<li>GetError()
+: <a class="el" href="classBeam_1_1Variable.html#a0f812cb76cca0cbb73021cd750222e7c">Beam::Variable</a>
+</li>
 <li>GetErrorLevel()
 : <a class="el" href="classExceptions_1_1Exception.html#a4228c880e90fa30f220c4c63cadf00cf">Exceptions::Exception</a>
 </li>
 <li>GetFactor()
 : <a class="el" href="classScattering.html#a92676aea6249273eb6fb3c035cb41df0">Scattering</a>
 </li>
+<li>GetGeometryHandler()
+: <a class="el" href="classGlobals.html#a1837d8470fc4c94868234b1b9586a537">Globals</a>
+</li>
 <li>GetGraph2D()
-: <a class="el" href="classTScatter.html#ad89597d73198a281b55ec5a92d97bfff">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a41c07bf982391f2487ee9b87d97aea7d">ScatterGraph</a>
 </li>
 <li>GetGrid()
 : <a class="el" href="classDensityEstimator.html#a77ce8b7b8b743c731e97433b89cc4cde">DensityEstimator</a>
 , <a class="el" href="classHistogram.html#a7c9530c7920b158419aae72725342c05">Histogram</a>
 , <a class="el" href="classInterpolator.html#a2e2e56c626f03199a36aec347150c124">Interpolator</a>
+</li>
+<li>GetID()
+: <a class="el" href="classParticleIdentification.html#a6f1deec4447702c319f3597f7c24038a">ParticleIdentification</a>
 </li>
 <li>GetIndex()
 : <a class="el" href="classBin.html#a90bfe7d5059596ad6ac3e27a9bfd32c7">Bin</a>
@@ -266,11 +284,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classBin.html#ae01564ba7702852e90b4dd53846f7987">Bin</a>
 , <a class="el" href="classVertex.html#a06fc300859925df9ef9002b3d9087635">Vertex</a>
 </li>
+<li>GetInfoBox()
+: <a class="el" href="classBeam_1_1Drawer.html#adaa810f1ec1b8c6e3882657daab6a760">Beam::Drawer</a>
+</li>
+<li>GetInstance()
+: <a class="el" href="classGlobals.html#aef163783ac891f3d1502cf683f0320ce">Globals</a>
+</li>
 <li>getInstance()
 : <a class="el" href="classPitch.html#a9694d83d529f11ec1bc6443a2eb1a73f">Pitch</a>
 </li>
 <li>GetInterpolationGrid()
 : <a class="el" href="classHistogram.html#ab5252906654725f0d4dc72a635838892">Histogram</a>
+</li>
+<li>GetListOfKeys()
+: <a class="el" href="classBeam_1_1Extractor.html#ace51b6d79c51963eb68135413d697037">Beam::Extractor</a>
 </li>
 <li>GetLocation()
 : <a class="el" href="classExceptions_1_1Exception.html#a93cdbb7d47247c734dffb0ca15ae4092">Exceptions::Exception</a>
@@ -302,6 +329,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetMCVertexArray()
 : <a class="el" href="classProbabilityContour.html#a31bf186a5d2bc71baf583d2250eb384d">ProbabilityContour</a>
 </li>
+<li>GetMError()
+: <a class="el" href="classBeam_1_1Variable.html#afaadf8aa1805548eff07ddc6b49f1006">Beam::Variable</a>
+</li>
 <li>GetMessage()
 : <a class="el" href="classExceptions_1_1Exception.html#ac354c1d8b01037f092eefdb0def98169">Exceptions::Exception</a>
 </li>
@@ -312,10 +342,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classEnergyLoss.html#a92bc1bb9b22e3d2a277f32946d2a7ccc">EnergyLoss</a>
 </li>
 <li>GetN()
-: <a class="el" href="classTScatter.html#a0e3e8d91dd279c82e3caf3c8533d22ba">TScatter</a>
+: <a class="el" href="classScatterGraph.html#aa27c69a4d05b1e0e5b4a6b88d1be9a0f">ScatterGraph</a>
 </li>
 <li>GetName()
-: <a class="el" href="classTScatter.html#af717b2875fef0cc9461a938d1827252a">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a8be1f1a46720f86afad5ab3d34ccf3c5">ScatterGraph</a>
 </li>
 <li>GetNbins()
 : <a class="el" href="classHistogram.html#a9b5b8c73e447d6896b1d0f0e60323e6c">Histogram</a>
@@ -336,6 +366,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GetPeriodArray()
 : <a class="el" href="classGrid.html#a7e0a8d01a2673f98623db2cb449033f8">Grid</a>
+</li>
+<li>GetPlaneIds()
+: <a class="el" href="classBeam_1_1Stream.html#a48513b61a6d47c425e0ad22549cf2928">Beam::Stream</a>
 </li>
 <li>GetPoint()
 : <a class="el" href="classAlphaComplex.html#ad65c21dc5f2319f5bb79987aa43e63ed">AlphaComplex</a>
@@ -362,8 +395,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetProgress()
 : <a class="el" href="classProgressBar.html#a96fad0d73a6e37c64162c277d80e8f01">ProgressBar</a>
 </li>
+<li>GetReach()
+: <a class="el" href="classBeam_1_1Stream.html#a5e074cef8de837b43bd4869ee33e7ac1">Beam::Stream</a>
+</li>
+<li>GetReaches()
+: <a class="el" href="classBeam_1_1Stream.html#a843e1278fc530710f5463e732ccc389a">Beam::Stream</a>
+</li>
 <li>GetRunName()
-: <a class="el" href="classExtractor.html#aadca568010fc0a4dac46655e572fa545">Extractor</a>
+: <a class="el" href="classBeam_1_1Extractor.html#a0b3ae6d2b9d57cf426034bb574ed9219">Beam::Extractor</a>
+</li>
+<li>GetSError()
+: <a class="el" href="classBeam_1_1Variable.html#a1abf0fafda201247dcf312d80b376763">Beam::Variable</a>
 </li>
 <li>GetSolenoidField()
 : <a class="el" href="classFieldHandler.html#a61771de4a1709086a47a5582a31bbf2f">FieldHandler</a>
@@ -383,6 +425,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetStepSize()
 : <a class="el" href="classEnergyLoss.html#a0c3c9ba32144a2c031703eb39fa16367">EnergyLoss</a>
 </li>
+<li>GetStream()
+: <a class="el" href="classBeam_1_1Extractor.html#addb70ee7d85806cfd8af1bf6f8c0be23">Beam::Extractor</a>
+</li>
+<li>GetStreams()
+: <a class="el" href="classBeam_1_1Extractor.html#ab98fa99706ab7bde163303fd6798d456">Beam::Extractor</a>
+</li>
 <li>GetTerminalWidth()
 : <a class="el" href="classProgressBar.html#ab11d7ada1a99cb28de4b1b58386908a7">ProgressBar</a>
 </li>
@@ -394,7 +442,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classScattering.html#af2552985ffae0c6f518b431edc138657">Scattering</a>
 </li>
 <li>GetTitle()
-: <a class="el" href="classTScatter.html#a3f0c8964f443d74ce5708778a798431e">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a01490fee2ffc4b67581c8b9dfc9e55a5">ScatterGraph</a>
+</li>
+<li>GetTofID()
+: <a class="el" href="classParticleIdentification.html#a608d1a627d0afbe5427e4ade4bdf7bf6">ParticleIdentification</a>
 </li>
 <li>GetUpperBound()
 : <a class="el" href="classBin.html#a1c46ea3347e4df08af786e4f1b8d5c86">Bin</a>
@@ -409,7 +460,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classOptimalBinning.html#a876b1ad91dc43ff86a76547b456d9d03">OptimalBinning</a>
 </li>
 <li>GetValue()
-: <a class="el" href="classVertex.html#a7164e073c0daf2f30451715eb454455e">Vertex</a>
+: <a class="el" href="classBeam_1_1Variable.html#ade9d7d1af9c82394dace0fe7ce458688">Beam::Variable</a>
+, <a class="el" href="classVertex.html#a7164e073c0daf2f30451715eb454455e">Vertex</a>
 </li>
 <li>GetVerbosityLevel()
 : <a class="el" href="classProgressBar.html#a0c08d78b16141bdaad1ab2b105568165">ProgressBar</a>
@@ -439,19 +491,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classExceptions_1_1Exception.html#a2229c3eb8a57071d6af6e7b3bee389f2">Exceptions::Exception</a>
 </li>
 <li>GetXaxis()
-: <a class="el" href="classTScatter.html#ae4657dc219d73459ee7505829ca7c695">TScatter</a>
+: <a class="el" href="classScatterGraph.html#ac44932a81315284bf5fd3098ca30509a">ScatterGraph</a>
 </li>
 <li>GetYaxis()
-: <a class="el" href="classTScatter.html#ae111f28bf5dc2ae5126de563124d2996">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a7a4319fad084c7387da9fce4eed2a1e1">ScatterGraph</a>
 </li>
 <li>GetZaxis()
-: <a class="el" href="classTScatter.html#a458449118bdbeef87ade46087e7e316e">TScatter</a>
+: <a class="el" href="classScatterGraph.html#a5b3221b2ca247872bba24fd66c6be347">ScatterGraph</a>
 </li>
 <li>Global()
-: <a class="el" href="classGlobal.html#aa066e869e164b3868331937612bbedc8">Global</a>
+: <a class="el" href="classGlobal.html#a36a5d6ef88143aad5e1d3c2b3465039f">Global</a>
 </li>
 <li>Globals()
-: <a class="el" href="classGlobals.html#a3b78cfdbe2809ad8b6b722969dda4425">Globals</a>
+: <a class="el" href="classGlobals.html#ac9444479cceafce542748a3988c0ad19">Globals</a>
 </li>
 <li>Graph()
 : <a class="el" href="classDensityEstimator.html#a5e4ebb3816f7e8b6c603df7fba6b68ab">DensityEstimator</a>
@@ -468,13 +520,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classDFunction.html#a0089524b261327c93cef0689bef67efd">DFunction</a>
 </li>
 <li>Grid()
-: <a class="el" href="classGrid.html#afcc9ddb37e99ee3ecd67bcc977bec90d">Grid</a>
+: <a class="el" href="classGrid.html#a506222912655cf3be7339d25d64c7df0">Grid</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:53 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

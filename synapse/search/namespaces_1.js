@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exceptions',['Exceptions',['../namespaceExceptions.html',1,'']]]
+  ['beam',['Beam',['../namespaceBeam.html',1,'']]]
 ];

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,21 +113,52 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4eb8d086fd51c4e753dadfa05ad0b99e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a4eb8d086fd51c4e753dadfa05ad0b99e">~Drawer</a> ()</td></tr>
 <tr class="memdesc:a4eb8d086fd51c4e753dadfa05ad0b99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a4eb8d086fd51c4e753dadfa05ad0b99e">More...</a><br/></td></tr>
 <tr class="separator:a4eb8d086fd51c4e753dadfa05ad0b99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289309f3f640151fc8109fa7922ea986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a289309f3f640151fc8109fa7922ea986">SetVariableSettings</a> (const std::string &amp;var, const <a class="el" href="structVarSet.html">VarSet</a> &amp;varset)</td></tr>
+<tr class="memdesc:a289309f3f640151fc8109fa7922ea986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets custom settings for the specified variable.  <a href="#a289309f3f640151fc8109fa7922ea986">More...</a><br/></td></tr>
+<tr class="separator:a289309f3f640151fc8109fa7922ea986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6380498d53796f55479cbcc7fe4b406"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#aa6380498d53796f55479cbcc7fe4b406">SetVariableLimits</a> (const std::string &amp;var, double llim, double ulim)</td></tr>
+<tr class="memdesc:aa6380498d53796f55479cbcc7fe4b406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the limits of the specified variable.  <a href="#aa6380498d53796f55479cbcc7fe4b406">More...</a><br/></td></tr>
+<tr class="separator:aa6380498d53796f55479cbcc7fe4b406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a96bf795958e155cdb28faeb84bbf2"><td class="memItemLeft" align="right" valign="top">TH1F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a73a96bf795958e155cdb28faeb84bbf2">New1DHistogram</a> (const std::string &amp;name, const std::string &amp;var) const </td></tr>
 <tr class="memdesc:a73a96bf795958e155cdb28faeb84bbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an appropriate TH1F to draw one of the phase space component.  <a href="#a73a96bf795958e155cdb28faeb84bbf2">More...</a><br/></td></tr>
 <tr class="separator:a73a96bf795958e155cdb28faeb84bbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf39954939613e8726d968524e70c0b4"><td class="memItemLeft" align="right" valign="top">TH2F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#aaf39954939613e8726d968524e70c0b4">New2DHistogram</a> (const std::string &amp;name, const std::string &amp;varx, const std::string &amp;vary) const </td></tr>
 <tr class="memdesc:aaf39954939613e8726d968524e70c0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines an appropriate TH1F to draw two of the phase space component.  <a href="#aaf39954939613e8726d968524e70c0b4">More...</a><br/></td></tr>
 <tr class="separator:aaf39954939613e8726d968524e70c0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29e154a8d16603dc774f24ee5ef6e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTScatter.html">TScatter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#aa29e154a8d16603dc774f24ee5ef6e9c">NewAmplitudeScatter</a> (const std::string &amp;name, const std::string &amp;varx, const std::string &amp;vary) const </td></tr>
+<tr class="memdesc:aa29e154a8d16603dc774f24ee5ef6e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a scatter plot with an amplitude color scale.  <a href="#aa29e154a8d16603dc774f24ee5ef6e9c">More...</a><br/></td></tr>
+<tr class="separator:aa29e154a8d16603dc774f24ee5ef6e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aaf15d3532e30dc98f6494827f01896"><td class="memItemLeft" align="right" valign="top">THStack *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a2aaf15d3532e30dc98f6494827f01896">NewStack</a> (std::map&lt; std::string, TH1F * &gt; hists) const </td></tr>
+<tr class="memdesc:a2aaf15d3532e30dc98f6494827f01896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a stack of histograms of different data types.  <a href="#a2aaf15d3532e30dc98f6494827f01896">More...</a><br/></td></tr>
+<tr class="separator:a2aaf15d3532e30dc98f6494827f01896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fb99b2aecbf92051c377d2cd164a38"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+TPaveStats * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#ab1fb99b2aecbf92051c377d2cd164a38">NewStackStats</a> (std::map&lt; std::string, TH1F * &gt; hists, const std::string draw_opt=&quot;EMR&quot;, double *hoffset=NULL) const </td></tr>
+<tr class="memdesc:ab1fb99b2aecbf92051c377d2cd164a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes stat boxes for a stack of histogram of different data types.  <a href="#ab1fb99b2aecbf92051c377d2cd164a38">More...</a><br/></td></tr>
+<tr class="separator:ab1fb99b2aecbf92051c377d2cd164a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a947e1560354f12c40c5b46c041264"><td class="memItemLeft" align="right" valign="top">TLegend *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a90a947e1560354f12c40c5b46c041264">NewStackLegend</a> (std::map&lt; std::string, TH1F * &gt; hists, const double hoffset=0) const </td></tr>
+<tr class="memdesc:a90a947e1560354f12c40c5b46c041264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes a legend for a stack of histogram of different data types.  <a href="#a90a947e1560354f12c40c5b46c041264">More...</a><br/></td></tr>
+<tr class="separator:a90a947e1560354f12c40c5b46c041264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c4cde88ab9a6abb6a056d76e160310"><td class="memItemLeft" align="right" valign="top">THStack *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#ac5c4cde88ab9a6abb6a056d76e160310">DrawStack</a> (std::map&lt; std::string, TH1F * &gt; hists, const std::string &amp;name)</td></tr>
+<tr class="memdesc:ac5c4cde88ab9a6abb6a056d76e160310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws superimposed data types histograms.  <a href="#ac5c4cde88ab9a6abb6a056d76e160310">More...</a><br/></td></tr>
+<tr class="separator:ac5c4cde88ab9a6abb6a056d76e160310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43978fe64cbb4d205528fb8423b7cbd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a43978fe64cbb4d205528fb8423b7cbd3">SaveStack</a> (std::map&lt; std::string, TH1F * &gt; hists, const std::string &amp;name, bool ratio=false)</td></tr>
+<tr class="memdesc:a43978fe64cbb4d205528fb8423b7cbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves superimposed data types histograms.  <a href="#a43978fe64cbb4d205528fb8423b7cbd3">More...</a><br/></td></tr>
+<tr class="separator:a43978fe64cbb4d205528fb8423b7cbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cbcd677471d8050d211b32d3d97c84"><td class="memItemLeft" align="right" valign="top">TMultiGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a15cbcd677471d8050d211b32d3d97c84">NewMultiGraph</a> (std::map&lt; std::string, TGraphErrors * &gt; graphs) const </td></tr>
+<tr class="memdesc:a15cbcd677471d8050d211b32d3d97c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a multigraph of graphs of different data types.  <a href="#a15cbcd677471d8050d211b32d3d97c84">More...</a><br/></td></tr>
+<tr class="separator:a15cbcd677471d8050d211b32d3d97c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4349cf93a2ef308e6cce3bbf3056e45"><td class="memItemLeft" align="right" valign="top">TH1F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#ad4349cf93a2ef308e6cce3bbf3056e45">ProjectionMeanX</a> (TH2F *hist, bool fit=false) const </td></tr>
 <tr class="memdesc:ad4349cf93a2ef308e6cce3bbf3056e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a TH1F of the mean Y as a function of X from a TH2F.  <a href="#ad4349cf93a2ef308e6cce3bbf3056e45">More...</a><br/></td></tr>
 <tr class="separator:ad4349cf93a2ef308e6cce3bbf3056e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abafb33fb44ebc34a3286ec7ef9b20b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#abafb33fb44ebc34a3286ec7ef9b20b00">DrawDataSimStack</a> (TH1F *hist_dat, TH1F *hist_sim, const std::string &amp;name, bool ratio=false, <a class="el" href="classInfoBox.html">InfoBox</a> *info=NULL)</td></tr>
-<tr class="memdesc:abafb33fb44ebc34a3286ec7ef9b20b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws superimposed data and simulation histograms.  <a href="#abafb33fb44ebc34a3286ec7ef9b20b00">More...</a><br/></td></tr>
-<tr class="separator:abafb33fb44ebc34a3286ec7ef9b20b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbed2f8862f6713122e673d92430208f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#acbed2f8862f6713122e673d92430208f">SetStyle</a> (TH1 *obj, const std::string &amp;type) const </td></tr>
-<tr class="memdesc:acbed2f8862f6713122e673d92430208f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the style according to the predefined options.  <a href="#acbed2f8862f6713122e673d92430208f">More...</a><br/></td></tr>
+<tr class="memdesc:acbed2f8862f6713122e673d92430208f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the histogram style according to the predefined options.  <a href="#acbed2f8862f6713122e673d92430208f">More...</a><br/></td></tr>
 <tr class="separator:acbed2f8862f6713122e673d92430208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69620aa009406cbf97a2fca4d27b12a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a69620aa009406cbf97a2fca4d27b12a7">SetStyle</a> (TGraph *obj, const std::string &amp;type) const </td></tr>
+<tr class="memdesc:a69620aa009406cbf97a2fca4d27b12a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the graph style according to the predefined options.  <a href="#a69620aa009406cbf97a2fca4d27b12a7">More...</a><br/></td></tr>
+<tr class="separator:a69620aa009406cbf97a2fca4d27b12a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30b08ff124bde4d2243e9be6c45a113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#ae30b08ff124bde4d2243e9be6c45a113">SetInfoBox</a> (<a class="el" href="classInfoBox.html">InfoBox</a> *info)</td></tr>
+<tr class="memdesc:ae30b08ff124bde4d2243e9be6c45a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the info box.  <a href="#ae30b08ff124bde4d2243e9be6c45a113">More...</a><br/></td></tr>
+<tr class="separator:ae30b08ff124bde4d2243e9be6c45a113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -158,6 +189,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0fffd6dc5cb9c325c2dd0d5cd9be76bf"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="structVarSet.html">VarSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a0fffd6dc5cb9c325c2dd0d5cd9be76bf">_varsets</a></td></tr>
 <tr class="memdesc:a0fffd6dc5cb9c325c2dd0d5cd9be76bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawing options for each data type.  <a href="#a0fffd6dc5cb9c325c2dd0d5cd9be76bf">More...</a><br/></td></tr>
 <tr class="separator:a0fffd6dc5cb9c325c2dd0d5cd9be76bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0dbbaf7b275e811dcf3dfeaf043676"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInfoBox.html">InfoBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawer.html#a7d0dbbaf7b275e811dcf3dfeaf043676">_info</a></td></tr>
+<tr class="memdesc:a7d0dbbaf7b275e811dcf3dfeaf043676"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAUS info box to be drawn.  <a href="#a7d0dbbaf7b275e811dcf3dfeaf043676">More...</a><br/></td></tr>
+<tr class="separator:a7d0dbbaf7b275e811dcf3dfeaf043676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores the default drawing options and methods to produce ROOT plots. </p>
@@ -266,62 +300,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abafb33fb44ebc34a3286ec7ef9b20b00"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Drawer::DrawDataSimStack </td>
-          <td>(</td>
-          <td class="paramtype">TH1F *&#160;</td>
-          <td class="paramname"><em>hist_dat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TH1F *&#160;</td>
-          <td class="paramname"><em>hist_sim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ratio</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classInfoBox.html">InfoBox</a> *&#160;</td>
-          <td class="paramname"><em>info</em> = <code>NULL</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Draws superimposed data and simulation histograms. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hist_dat</td><td>Data histogram </td></tr>
-    <tr><td class="paramname">hist_sim</td><td>Simulation histogram </td></tr>
-    <tr><td class="paramname">name</td><td>File name </td></tr>
-    <tr><td class="paramname">ratio</td><td>Draws the ratio data/simulation </td></tr>
-    <tr><td class="paramname">info</td><td>Pointer to a run info box </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a5c6bd5690375e6fbcbb1fb1311a57f7a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -369,6 +347,43 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5c4cde88ab9a6abb6a056d76e160310"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THStack * Drawer::DrawStack </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, TH1F * &gt;&#160;</td>
+          <td class="paramname"><em>hists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws superimposed data types histograms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hists</td><td>Map of histograms that form the stack </td></tr>
+    <tr><td class="paramname">name</td><td>File name </td></tr>
+    <tr><td class="paramname">ratio</td><td>Draws the ratio data/simulation</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the drawn stack </dd></dl>
 
 </div>
 </div>
@@ -425,10 +440,11 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name of the histogram </td></tr>
-    <tr><td class="paramname">var</td><td><a class="el" href="classVariable.html" title="Contains the value, measurement uncertainty and statistical uncertainty of a variable. ">Variable</a> to be drawn </td></tr>
+    <tr><td class="paramname">var</td><td>Variable to be drawn</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized histogram </dd></dl>
 
 </div>
 </div>
@@ -467,10 +483,183 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name of the histogram </td></tr>
     <tr><td class="paramname">varx</td><td>First variable to be drawn </td></tr>
-    <tr><td class="paramname">vary</td><td>Second variable to be drawn </td></tr>
+    <tr><td class="paramname">vary</td><td>Second variable to be drawn</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized histogram </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa29e154a8d16603dc774f24ee5ef6e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTScatter.html">TScatter</a> * Drawer::NewAmplitudeScatter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>varx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a scatter plot with an amplitude color scale. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the scatter plot </td></tr>
+    <tr><td class="paramname">varx</td><td>First variable to be drawn </td></tr>
+    <tr><td class="paramname">vary</td><td>Second variable to be drawn</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized scatter plot </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15cbcd677471d8050d211b32d3d97c84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMultiGraph * Drawer::NewMultiGraph </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, TGraphErrors * &gt;&#160;</td>
+          <td class="paramname"><em>graphs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a multigraph of graphs of different data types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hists</td><td>Map of graphs that form the multigraph</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized multigraph </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2aaf15d3532e30dc98f6494827f01896"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THStack * Drawer::NewStack </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, TH1F * &gt;&#160;</td>
+          <td class="paramname"><em>hists</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a stack of histograms of different data types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hists</td><td>Map of histograms that form the stack</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized stack </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90a947e1560354f12c40c5b46c041264"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TLegend * Drawer::NewStackLegend </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, TH1F * &gt;&#160;</td>
+          <td class="paramname"><em>hists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>hoffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Intializes a legend for a stack of histogram of different data types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hists</td><td>Map of histograms that form the stack </td></tr>
+    <tr><td class="paramname">hoffset</td><td>Height offset due to the presence of a statbox</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized stack legend </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1fb99b2aecbf92051c377d2cd164a38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, TPaveStats * &gt; Drawer::NewStackStats </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, TH1F * &gt;&#160;</td>
+          <td class="paramname"><em>hists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>draw_opt</em> = <code>&quot;EMR&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>hoffset</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Intializes stat boxes for a stack of histogram of different data types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hists</td><td>Map of histograms that form the stack </td></tr>
+    <tr><td class="paramname">draw_opt</td><td>Drawing options ("E" for entries, "M" for mean, "R" for RMS) </td></tr>
+    <tr><td class="paramname">hoffset</td><td>Height offset due to the presence of a statbox</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of pointers to each initialized stack stat box </dd></dl>
 
 </div>
 </div>
@@ -520,10 +709,11 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hist</td><td>Input 2D histogram </td></tr>
-    <tr><td class="paramname">fit</td><td>Flag for Gaussian peak fitting </td></tr>
+    <tr><td class="paramname">fit</td><td>Flag for Gaussian peak fitting</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the initialized projected histogram </dd></dl>
 
 </div>
 </div>
@@ -570,6 +760,80 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a43978fe64cbb4d205528fb8423b7cbd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawer::SaveStack </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, TH1F * &gt;&#160;</td>
+          <td class="paramname"><em>hists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ratio</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves superimposed data types histograms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hists</td><td>Map of histograms that form the stack </td></tr>
+    <tr><td class="paramname">name</td><td>File name </td></tr>
+    <tr><td class="paramname">ratio</td><td>Draws the ratio data/simulation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae30b08ff124bde4d2243e9be6c45a113"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawer::SetInfoBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInfoBox.html">InfoBox</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the info box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>MAUS info box object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="acbed2f8862f6713122e673d92430208f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -594,10 +858,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the style according to the predefined options. </p>
+<p>Sets the histogram style according to the predefined options. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>ROOT histogram (may be TH2, TH3, THStack but need to cast TGraphs) </td></tr>
+    <tr><td class="paramname">obj</td><td>ROOT histogram (may be TH1, TH2 or TH3) </td></tr>
     <tr><td class="paramname">type</td><td>Data type </td></tr>
   </table>
   </dd>
@@ -605,7 +869,149 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a69620aa009406cbf97a2fca4d27b12a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawer::SetStyle </td>
+          <td>(</td>
+          <td class="paramtype">TGraph *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the graph style according to the predefined options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>ROOT graph (may be TGraph or TGraphErrors) </td></tr>
+    <tr><td class="paramname">type</td><td>Data type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6380498d53796f55479cbcc7fe4b406"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawer::SetVariableLimits </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>llim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ulim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the limits of the specified variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Name of the variable </td></tr>
+    <tr><td class="paramname">llim</td><td>Lower limit </td></tr>
+    <tr><td class="paramname">ulim</td><td>Upper limit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a289309f3f640151fc8109fa7922ea986"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawer::SetVariableSettings </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVarSet.html">VarSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>varset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets custom settings for the specified variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Name of the variable </td></tr>
+    <tr><td class="paramname">varset</td><td>Variable settings </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a7d0dbbaf7b275e811dcf3dfeaf043676"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classInfoBox.html">InfoBox</a>* Drawer::_info</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MAUS info box to be drawn. </p>
+
+</div>
+</div>
 <a class="anchor" id="afb31fa131fe876b57588c7e57b0d5bcf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -701,7 +1107,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:52 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 30 2018 20:31:15 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

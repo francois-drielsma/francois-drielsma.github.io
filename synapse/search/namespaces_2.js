@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['math',['Math',['../namespaceMath.html',1,'']]]
+  ['exceptions',['Exceptions',['../namespaceExceptions.html',1,'']]]
 ];

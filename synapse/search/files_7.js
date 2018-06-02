@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['reweightbeam_2ecc',['ReweightBeam.cc',['../ReweightBeam_8cc.html',1,'']]]
+  ['statistics_2ehh',['Statistics.hh',['../Statistics_8hh.html',1,'']]],
+  ['systematiccorrections_2ecc',['SystematicCorrections.cc',['../SystematicCorrections_8cc.html',1,'']]]
 ];

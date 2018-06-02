@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>SynAPSE: tools/InfoBox.hh Source File</title>
+<title>SynAPSE: src/utils/InfoBox.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html">tools</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -105,58 +105,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classInfoBox.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInfoBox.html">InfoBox</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classInfoBox.html#ab37d0288edb9a39d7b475dbdfc5b5c86">InfoBox</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classInfoBox.html#ab37d0288edb9a39d7b475dbdfc5b5c86">InfoBox</a>(<span class="keyword">const</span> std::string type=<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> std::string maus=<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> std::string run=<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> std::string cycle=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classInfoBox.html#ab37d0288edb9a39d7b475dbdfc5b5c86">InfoBox</a>(<span class="keyword">const</span> <a class="code" href="classInfoBox.html">InfoBox</a>&amp; ib);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classInfoBox.html">InfoBox</a>&amp; <a class="code" href="classInfoBox.html#a868a074028f46c60333f209503ebdde1">operator=</a>(<span class="keyword">const</span> <a class="code" href="classInfoBox.html">InfoBox</a>&amp; ib);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classInfoBox.html#a67549c7fda6b8a59c122ed6b5977580c">~InfoBox</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">SetPosition</a>(<span class="keyword">const</span> std::string&amp; pos,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span> alpha=.02,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span> beta=.16);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">SetPosition</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; xmin,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; ymin,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; xmax,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; ymax);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#a0f5c9e6f55ccfdfaccbb5b98501f7404">SetOpacity</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; opacity);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#ad2190583aad2eacdef9cc9a8111fd860">Draw</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classInfoBox.html#a5e9c9c0db2357471e1710fbb041c9e2d">InfoBox</a>(<span class="keyword">const</span> std::string type=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> std::string maus=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">const</span> std::string run=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> std::string cycle=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classInfoBox.html#a5e9c9c0db2357471e1710fbb041c9e2d">InfoBox</a>(<span class="keyword">const</span> <a class="code" href="classInfoBox.html">InfoBox</a>&amp; ib);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classInfoBox.html">InfoBox</a>&amp; <a class="code" href="classInfoBox.html#a868a074028f46c60333f209503ebdde1">operator=</a>(<span class="keyword">const</span> <a class="code" href="classInfoBox.html">InfoBox</a>&amp; ib);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classInfoBox.html#a67549c7fda6b8a59c122ed6b5977580c">~InfoBox</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">SetPosition</a>(<span class="keyword">const</span> std::string&amp; pos,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span> alpha=.02,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span> beta=.16);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">SetPosition</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; xmin,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; ymin,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; xmax,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; ymax);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#a0f5c9e6f55ccfdfaccbb5b98501f7404">SetOpacity</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; opacity);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInfoBox.html#ad2190583aad2eacdef9cc9a8111fd860">Draw</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classInfoBox.html#aa11aa88b449f4ad18d802f5f4d8a6377">   77</a></span>&#160;  TPaveText*        <a class="code" href="classInfoBox.html#aa11aa88b449f4ad18d802f5f4d8a6377">_text</a>;      </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classInfoBox.html#a572e30b97e4e297317b2c87cef5c4180">   78</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#a572e30b97e4e297317b2c87cef5c4180">_type</a>;      </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classInfoBox.html#a384e6a3d809df483321bf370e5f6d5a4">   79</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#a384e6a3d809df483321bf370e5f6d5a4">_maus</a>;      </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classInfoBox.html#a8de3a648a3f305371892ccdfaac14dc8">   80</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#a8de3a648a3f305371892ccdfaac14dc8">_run</a>;       </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classInfoBox.html#adbc2ea20f57ad8cb0af730e1b2e40fb6">   81</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#adbc2ea20f57ad8cb0af730e1b2e40fb6">_cycle</a>;     </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classInfoBox_html_a0f5c9e6f55ccfdfaccbb5b98501f7404"><div class="ttname"><a href="classInfoBox.html#a0f5c9e6f55ccfdfaccbb5b98501f7404">InfoBox::SetOpacity</a></div><div class="ttdeci">void SetOpacity(const double &amp;opacity)</div><div class="ttdoc">Sets the opacity of the TPaveText (0 is transparent, 1 is fully opaque) </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:78</div></div>
-<div class="ttc" id="classInfoBox_html_a42b9a07399e1484adc2bec6e41cf3861"><div class="ttname"><a href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">InfoBox::SetPosition</a></div><div class="ttdeci">void SetPosition(const std::string &amp;pos, const double alpha=.02, const double beta=.16)</div><div class="ttdoc">Updates the position of the info box. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:45</div></div>
-<div class="ttc" id="classInfoBox_html_a67549c7fda6b8a59c122ed6b5977580c"><div class="ttname"><a href="classInfoBox.html#a67549c7fda6b8a59c122ed6b5977580c">InfoBox::~InfoBox</a></div><div class="ttdeci">~InfoBox()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:40</div></div>
-<div class="ttc" id="classInfoBox_html_adbc2ea20f57ad8cb0af730e1b2e40fb6"><div class="ttname"><a href="classInfoBox.html#adbc2ea20f57ad8cb0af730e1b2e40fb6">InfoBox::_cycle</a></div><div class="ttdeci">std::string _cycle</div><div class="ttdoc">ISIS user cycle. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:81</div></div>
-<div class="ttc" id="classInfoBox_html_ad2190583aad2eacdef9cc9a8111fd860"><div class="ttname"><a href="classInfoBox.html#ad2190583aad2eacdef9cc9a8111fd860">InfoBox::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdoc">Draws the info box on the current canvas. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:84</div></div>
-<div class="ttc" id="classInfoBox_html_a868a074028f46c60333f209503ebdde1"><div class="ttname"><a href="classInfoBox.html#a868a074028f46c60333f209503ebdde1">InfoBox::operator=</a></div><div class="ttdeci">InfoBox &amp; operator=(const InfoBox &amp;ib)</div><div class="ttdoc">Equality operator. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:25</div></div>
-<div class="ttc" id="classInfoBox_html_aa11aa88b449f4ad18d802f5f4d8a6377"><div class="ttname"><a href="classInfoBox.html#aa11aa88b449f4ad18d802f5f4d8a6377">InfoBox::_text</a></div><div class="ttdeci">TPaveText * _text</div><div class="ttdoc">Info box. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:77</div></div>
-<div class="ttc" id="classInfoBox_html_a384e6a3d809df483321bf370e5f6d5a4"><div class="ttname"><a href="classInfoBox.html#a384e6a3d809df483321bf370e5f6d5a4">InfoBox::_maus</a></div><div class="ttdeci">std::string _maus</div><div class="ttdoc">Version of MAUS. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:79</div></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classInfoBox.html#aa11aa88b449f4ad18d802f5f4d8a6377">   75</a></span>&#160;  TPaveText*        <a class="code" href="classInfoBox.html#aa11aa88b449f4ad18d802f5f4d8a6377">_text</a>;      </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classInfoBox.html#a572e30b97e4e297317b2c87cef5c4180">   76</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#a572e30b97e4e297317b2c87cef5c4180">_type</a>;      </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classInfoBox.html#a384e6a3d809df483321bf370e5f6d5a4">   77</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#a384e6a3d809df483321bf370e5f6d5a4">_maus</a>;      </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classInfoBox.html#a8de3a648a3f305371892ccdfaac14dc8">   78</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#a8de3a648a3f305371892ccdfaac14dc8">_run</a>;       </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classInfoBox.html#adbc2ea20f57ad8cb0af730e1b2e40fb6">   79</a></span>&#160;  std::string       <a class="code" href="classInfoBox.html#adbc2ea20f57ad8cb0af730e1b2e40fb6">_cycle</a>;     </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classInfoBox_html_a0f5c9e6f55ccfdfaccbb5b98501f7404"><div class="ttname"><a href="classInfoBox.html#a0f5c9e6f55ccfdfaccbb5b98501f7404">InfoBox::SetOpacity</a></div><div class="ttdeci">void SetOpacity(const double &amp;opacity)</div><div class="ttdoc">Sets the opacity of the TPaveText (0 is transparent, 1 is fully opaque) </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:77</div></div>
+<div class="ttc" id="classInfoBox_html_a42b9a07399e1484adc2bec6e41cf3861"><div class="ttname"><a href="classInfoBox.html#a42b9a07399e1484adc2bec6e41cf3861">InfoBox::SetPosition</a></div><div class="ttdeci">void SetPosition(const std::string &amp;pos, const double alpha=.02, const double beta=.16)</div><div class="ttdoc">Updates the position of the info box. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:42</div></div>
+<div class="ttc" id="classInfoBox_html_a67549c7fda6b8a59c122ed6b5977580c"><div class="ttname"><a href="classInfoBox.html#a67549c7fda6b8a59c122ed6b5977580c">InfoBox::~InfoBox</a></div><div class="ttdeci">~InfoBox()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:37</div></div>
+<div class="ttc" id="classInfoBox_html_adbc2ea20f57ad8cb0af730e1b2e40fb6"><div class="ttname"><a href="classInfoBox.html#adbc2ea20f57ad8cb0af730e1b2e40fb6">InfoBox::_cycle</a></div><div class="ttdeci">std::string _cycle</div><div class="ttdoc">ISIS user cycle. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:79</div></div>
+<div class="ttc" id="classInfoBox_html_a5e9c9c0db2357471e1710fbb041c9e2d"><div class="ttname"><a href="classInfoBox.html#a5e9c9c0db2357471e1710fbb041c9e2d">InfoBox::InfoBox</a></div><div class="ttdeci">InfoBox(const std::string type=&quot;&quot;, const std::string maus=&quot;&quot;, const std::string run=&quot;&quot;, const std::string cycle=&quot;&quot;)</div><div class="ttdoc">MAUS info box constructor, sets the necessary information. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:3</div></div>
+<div class="ttc" id="classInfoBox_html_ad2190583aad2eacdef9cc9a8111fd860"><div class="ttname"><a href="classInfoBox.html#ad2190583aad2eacdef9cc9a8111fd860">InfoBox::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdoc">Draws the info box on the current canvas. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:82</div></div>
+<div class="ttc" id="classInfoBox_html_a868a074028f46c60333f209503ebdde1"><div class="ttname"><a href="classInfoBox.html#a868a074028f46c60333f209503ebdde1">InfoBox::operator=</a></div><div class="ttdeci">InfoBox &amp; operator=(const InfoBox &amp;ib)</div><div class="ttdoc">Equality operator. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:22</div></div>
+<div class="ttc" id="classInfoBox_html_aa11aa88b449f4ad18d802f5f4d8a6377"><div class="ttname"><a href="classInfoBox.html#aa11aa88b449f4ad18d802f5f4d8a6377">InfoBox::_text</a></div><div class="ttdeci">TPaveText * _text</div><div class="ttdoc">Info box. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:75</div></div>
+<div class="ttc" id="classInfoBox_html_a384e6a3d809df483321bf370e5f6d5a4"><div class="ttname"><a href="classInfoBox.html#a384e6a3d809df483321bf370e5f6d5a4">InfoBox::_maus</a></div><div class="ttdeci">std::string _maus</div><div class="ttdoc">Version of MAUS. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:77</div></div>
 <div class="ttc" id="classInfoBox_html"><div class="ttname"><a href="classInfoBox.html">InfoBox</a></div><div class="ttdoc">Stores the MICE run information to be printed as TPaveText. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:18</div></div>
-<div class="ttc" id="classInfoBox_html_ab37d0288edb9a39d7b475dbdfc5b5c86"><div class="ttname"><a href="classInfoBox.html#ab37d0288edb9a39d7b475dbdfc5b5c86">InfoBox::InfoBox</a></div><div class="ttdeci">InfoBox()</div><div class="ttdoc">Default constructor, initilizes everything to 0. </div><div class="ttdef"><b>Definition:</b> InfoBox.cc:3</div></div>
-<div class="ttc" id="classInfoBox_html_a8de3a648a3f305371892ccdfaac14dc8"><div class="ttname"><a href="classInfoBox.html#a8de3a648a3f305371892ccdfaac14dc8">InfoBox::_run</a></div><div class="ttdeci">std::string _run</div><div class="ttdoc">Run tag. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:80</div></div>
-<div class="ttc" id="classInfoBox_html_a572e30b97e4e297317b2c87cef5c4180"><div class="ttname"><a href="classInfoBox.html#a572e30b97e4e297317b2c87cef5c4180">InfoBox::_type</a></div><div class="ttdeci">std::string _type</div><div class="ttdoc">Type of data represented. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:78</div></div>
+<div class="ttc" id="classInfoBox_html_a8de3a648a3f305371892ccdfaac14dc8"><div class="ttname"><a href="classInfoBox.html#a8de3a648a3f305371892ccdfaac14dc8">InfoBox::_run</a></div><div class="ttdeci">std::string _run</div><div class="ttdoc">Run tag. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:78</div></div>
+<div class="ttc" id="classInfoBox_html_a572e30b97e4e297317b2c87cef5c4180"><div class="ttname"><a href="classInfoBox.html#a572e30b97e4e297317b2c87cef5c4180">InfoBox::_type</a></div><div class="ttdeci">std::string _type</div><div class="ttdoc">Type of data represented. </div><div class="ttdef"><b>Definition:</b> InfoBox.hh:76</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:51 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>SynAPSE: exc/Assert.hh Source File</title>
+<title>SynAPSE: src/exc/Assert.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d85fb5a63989c438f82fbf2398450f40.html">exc</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_583e219a331638c9b8827577ff2d7452.html">exc</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,89 +98,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// Other includes</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespaceAssert.html#a517949bfe3b9ed092cabf916cfc8f5fc">   10</a></span>&#160;<span class="preprocessor">#include &quot;Exception.hh&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>Assert {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a58c0dd8968462fbbaad6ea64313f27ba">IsNonZero</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceAssert.html#ad69029c9442f78c3a928b953dafbd5c5">   27</a></span>&#160;                        <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        <span class="keyword">const</span> T&amp; value);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a517949bfe3b9ed092cabf916cfc8f5fc">IsGreater</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="keyword">const</span> T&amp; value,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keyword">const</span> T&amp; limit,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> strictly=<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#ad69029c9442f78c3a928b953dafbd5c5">IsLower</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">   53</a></span>&#160;                      <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                      <span class="keyword">const</span> T&amp; value,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                      <span class="keyword">const</span> T&amp; limit,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">bool</span> strictly=<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a640d13e5a829b86704884b1473c84ad7">IsEqual</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                      <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                      <span class="keyword">const</span> T&amp; a,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                      <span class="keyword">const</span> T&amp; b);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">IsNotEmpty</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                     <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vector);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a25546faf83baee20358854dac6e79464">IsWithinBounds</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">size_t</span> i);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a54d74042dcfa8c1473c2f044b770f824">HasAtLeast</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                     <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                     <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vector,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">size_t</span> n);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#af224476af62e8f095b7cf058f3632e60">HasAtMost</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vector,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7157e346e87e8e15d6fa84c48810a033">SameSize</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                   <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                   <span class="keyword">const</span> std::vector&lt;T&gt;&amp; va,</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                   <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vb);</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespaceAssert.html#ac1978034fbd18bc1189b043d3e5fb4be">  124</a></span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7157e346e87e8e15d6fa84c48810a033">SameSize</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                   <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                   <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; ma,</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                   <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; mb);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a579cf74b9152fb45afa9599cdcc6ba2e">Multiplicable</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; ma,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; mb);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#afd6f3aaf61312f4b64966a9a74223afa">IsSquare</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                   <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                   <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; matrix);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#ac1978034fbd18bc1189b043d3e5fb4be">IsSymmetric</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                      <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                      <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; matrix);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a4fc38b35b3726c9416bbee1b093718ea">IsProbability</a>(<span class="keyword">const</span> std::string&amp; location,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;           <span class="keyword">const</span> std::string&amp; what,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; p,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">bool</span> nonzero=<span class="keyword">true</span>,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">bool</span> noncert=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#include &quot;Assert-inl.hh&quot;</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;} <span class="comment">// namespace Assert</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespaceAssert.html#a517949bfe3b9ed092cabf916cfc8f5fc">   10</a></span>&#160;<span class="comment">// Other includes</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Exception.hh&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>Assert {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceAssert.html#ad69029c9442f78c3a928b953dafbd5c5">   27</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a58c0dd8968462fbbaad6ea64313f27ba">IsNonZero</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        <span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a517949bfe3b9ed092cabf916cfc8f5fc">IsGreater</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keyword">const</span> T&amp; value,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        <span class="keyword">const</span> T&amp; limit,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> strictly=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespaceAssert.html#a640d13e5a829b86704884b1473c84ad7">   44</a></span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">   53</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#ad69029c9442f78c3a928b953dafbd5c5">IsLower</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                      <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                      <span class="keyword">const</span> T&amp; value,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                      <span class="keyword">const</span> T&amp; limit,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">bool</span> strictly=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a640d13e5a829b86704884b1473c84ad7">IsEqual</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                      <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                      <span class="keyword">const</span> T&amp; a,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                      <span class="keyword">const</span> T&amp; b);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">IsNotEmpty</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vector);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a25546faf83baee20358854dac6e79464">IsWithinBounds</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">size_t</span> n,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">size_t</span> i);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a54d74042dcfa8c1473c2f044b770f824">HasAtLeast</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                     <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                     <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vector,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">size_t</span> n);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#af224476af62e8f095b7cf058f3632e60">HasAtMost</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vector,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7157e346e87e8e15d6fa84c48810a033">SameSize</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                   <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                   <span class="keyword">const</span> std::vector&lt;T&gt;&amp; va,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                   <span class="keyword">const</span> std::vector&lt;T&gt;&amp; vb);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7157e346e87e8e15d6fa84c48810a033">SameSize</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                   <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                   <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; ma,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                   <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; mb);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a579cf74b9152fb45afa9599cdcc6ba2e">Multiplicable</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="namespaceAssert.html#a7269fec0b1e124a46f19ba0750cc98d5">  147</a></span>&#160;                    <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; ma,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; mb);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#afd6f3aaf61312f4b64966a9a74223afa">IsSquare</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                   <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                   <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; matrix);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#ac1978034fbd18bc1189b043d3e5fb4be">IsSymmetric</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                      <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                      <span class="keyword">const</span> std::vector&lt;std::vector&lt;T&gt;&gt;&amp; matrix);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a7269fec0b1e124a46f19ba0750cc98d5">Contains</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                             <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                             <span class="keyword">const</span> std::map&lt;T1, T2&gt;&amp; map,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                             <span class="keyword">const</span> T1&amp; key);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceAssert.html#a4fc38b35b3726c9416bbee1b093718ea">IsProbability</a>(<span class="keyword">const</span> std::string&amp; location,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;           <span class="keyword">const</span> std::string&amp; what,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; p,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">bool</span> nonzero=<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">bool</span> noncert=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#include &quot;Assert-inl.hh&quot;</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;} <span class="comment">// namespace Assert</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespaceAssert_html_a517949bfe3b9ed092cabf916cfc8f5fc"><div class="ttname"><a href="namespaceAssert.html#a517949bfe3b9ed092cabf916cfc8f5fc">Assert::IsGreater</a></div><div class="ttdeci">void IsGreater(const std::string &amp;location, const std::string &amp;what, const T &amp;value, const T &amp;limit, const bool strictly=false)</div><div class="ttdoc">Asserts that a value is greater than another. </div><div class="ttdef"><b>Definition:</b> Assert.hh:10</div></div>
 <div class="ttc" id="namespaceAssert_html_a58c0dd8968462fbbaad6ea64313f27ba"><div class="ttname"><a href="namespaceAssert.html#a58c0dd8968462fbbaad6ea64313f27ba">Assert::IsNonZero</a></div><div class="ttdeci">void IsNonZero(const std::string &amp;location, const std::string &amp;what, const T &amp;value)</div><div class="ttdoc">Asserts that a value is non zero. </div><div class="ttdef"><b>Definition:</b> Assert.hh:2</div></div>
 <div class="ttc" id="namespaceAssert_html_a4fc38b35b3726c9416bbee1b093718ea"><div class="ttname"><a href="namespaceAssert.html#a4fc38b35b3726c9416bbee1b093718ea">Assert::IsProbability</a></div><div class="ttdeci">void IsProbability(const std::string &amp;location, const std::string &amp;what, const double &amp;p, const bool nonzero, const bool noncert)</div><div class="ttdoc">Asserts that the value represents a probability (0 &lt; p &lt; 1) </div><div class="ttdef"><b>Definition:</b> Assert.cc:13</div></div>
 <div class="ttc" id="namespaceAssert_html_afd6f3aaf61312f4b64966a9a74223afa"><div class="ttname"><a href="namespaceAssert.html#afd6f3aaf61312f4b64966a9a74223afa">Assert::IsSquare</a></div><div class="ttdeci">void IsSquare(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;matrix)</div><div class="ttdoc">Asserts that a matrix is square. </div><div class="ttdef"><b>Definition:</b> Assert.hh:116</div></div>
 <div class="ttc" id="namespaceAssert_html_a54d74042dcfa8c1473c2f044b770f824"><div class="ttname"><a href="namespaceAssert.html#a54d74042dcfa8c1473c2f044b770f824">Assert::HasAtLeast</a></div><div class="ttdeci">void HasAtLeast(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; T &gt; &amp;vector, const size_t n)</div><div class="ttdoc">Asserts that a vector has at least n elements. </div><div class="ttdef"><b>Definition:</b> Assert.hh:61</div></div>
+<div class="ttc" id="namespaceAssert_html_a7269fec0b1e124a46f19ba0750cc98d5"><div class="ttname"><a href="namespaceAssert.html#a7269fec0b1e124a46f19ba0750cc98d5">Assert::Contains</a></div><div class="ttdeci">void Contains(const std::string &amp;location, const std::string &amp;what, const std::map&lt; T1, T2 &gt; &amp;map, const T1 &amp;key)</div><div class="ttdoc">Asserts that a map contains a specific entry. </div><div class="ttdef"><b>Definition:</b> Assert.hh:147</div></div>
 <div class="ttc" id="namespaceAssert_html_ad69029c9442f78c3a928b953dafbd5c5"><div class="ttname"><a href="namespaceAssert.html#ad69029c9442f78c3a928b953dafbd5c5">Assert::IsLower</a></div><div class="ttdeci">void IsLower(const std::string &amp;location, const std::string &amp;what, const T &amp;value, const T &amp;limit, const bool strictly=false)</div><div class="ttdoc">Asserts that a value is lower than another. </div><div class="ttdef"><b>Definition:</b> Assert.hh:27</div></div>
 <div class="ttc" id="namespaceAssert_html_a640d13e5a829b86704884b1473c84ad7"><div class="ttname"><a href="namespaceAssert.html#a640d13e5a829b86704884b1473c84ad7">Assert::IsEqual</a></div><div class="ttdeci">void IsEqual(const std::string &amp;location, const std::string &amp;what, const T &amp;a, const T &amp;b)</div><div class="ttdoc">Asserts that the values are equal. </div><div class="ttdef"><b>Definition:</b> Assert.hh:44</div></div>
 <div class="ttc" id="namespaceAssert_html_af224476af62e8f095b7cf058f3632e60"><div class="ttname"><a href="namespaceAssert.html#af224476af62e8f095b7cf058f3632e60">Assert::HasAtMost</a></div><div class="ttdeci">void HasAtMost(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; T &gt; &amp;vector, const size_t n)</div><div class="ttdoc">Asserts that a vector has at most n elements. </div><div class="ttdef"><b>Definition:</b> Assert.hh:72</div></div>
@@ -188,11 +195,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespaceAssert_html_a579cf74b9152fb45afa9599cdcc6ba2e"><div class="ttname"><a href="namespaceAssert.html#a579cf74b9152fb45afa9599cdcc6ba2e">Assert::Multiplicable</a></div><div class="ttdeci">void Multiplicable(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;ma, const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;mb)</div><div class="ttdoc">Asserts that two matrices are multiplicable. </div><div class="ttdef"><b>Definition:</b> Assert.hh:105</div></div>
 <div class="ttc" id="namespaceAssert_html_a7713939ec19399c5766a1454ce2feadc"><div class="ttname"><a href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">Assert::IsNotEmpty</a></div><div class="ttdeci">void IsNotEmpty(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; T &gt; &amp;vector)</div><div class="ttdoc">Asserts that a vector is not empty. </div><div class="ttdef"><b>Definition:</b> Assert.hh:53</div></div>
 <div class="ttc" id="namespaceAssert_html_a7157e346e87e8e15d6fa84c48810a033"><div class="ttname"><a href="namespaceAssert.html#a7157e346e87e8e15d6fa84c48810a033">Assert::SameSize</a></div><div class="ttdeci">void SameSize(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; T &gt; &amp;va, const std::vector&lt; T &gt; &amp;vb)</div><div class="ttdoc">Asserts that two vectors have the same size. </div><div class="ttdef"><b>Definition:</b> Assert.hh:83</div></div>
-<div class="ttc" id="namespaceAssert_html_ac1978034fbd18bc1189b043d3e5fb4be"><div class="ttname"><a href="namespaceAssert.html#ac1978034fbd18bc1189b043d3e5fb4be">Assert::IsSymmetric</a></div><div class="ttdeci">void IsSymmetric(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;matrix)</div><div class="ttdoc">Asserts that a matrix is symmetric. </div><div class="ttdef"><b>Definition:</b> Assert.hh:124</div></div>
+<div class="ttc" id="namespaceAssert_html_ac1978034fbd18bc1189b043d3e5fb4be"><div class="ttname"><a href="namespaceAssert.html#ac1978034fbd18bc1189b043d3e5fb4be">Assert::IsSymmetric</a></div><div class="ttdeci">void IsSymmetric(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; std::vector&lt; T &gt;&gt; &amp;matrix)</div><div class="ttdoc">Asserts that a matrix is symmetric. </div><div class="ttdef"><b>Definition:</b> Assert.hh:126</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:51 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

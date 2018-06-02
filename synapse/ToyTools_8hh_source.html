@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>SynAPSE: toy/ToyTools.hh Source File</title>
+<title>SynAPSE: src/toy/ToyTools.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_666c06426345486469e3197b47d1395e.html">toy</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c2e2b51e5a3f5ca580915a274eea3f52.html">toy</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -106,17 +106,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;DGaus.hh&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Matrix.hh&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;std::map&lt;std::string, std::vector&lt;double&gt;&gt; <a class="code" href="ToyTools_8hh.html#aa20cc8d508be9649b438005e7c8a9711">GaussianBeam</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; m,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; p,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; n,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; eps,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; beta,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span> alpha=0.);</div>
-<div class="ttc" id="ToyTools_8hh_html_aa20cc8d508be9649b438005e7c8a9711"><div class="ttname"><a href="ToyTools_8hh.html#aa20cc8d508be9649b438005e7c8a9711">GaussianBeam</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; double &gt; &gt; GaussianBeam(const double &amp;m, const double &amp;p, const double &amp;n, const double &amp;eps, const double &amp;beta, const double alpha=0.)</div><div class="ttdoc">Generates a Gaussian beam from the given beam parameters. </div><div class="ttdef"><b>Definition:</b> ToyTools.cc:3</div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;std::map&lt;std::string, std::vector&lt;double&gt;&gt; <a class="code" href="ToyTools_8hh.html#a3df555890097ab659508a1957d8d6091">GaussianBunch</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; m,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; p,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; n,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; eps,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; beta,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">double</span> alpha=0.);</div>
+<div class="ttc" id="ToyTools_8hh_html_a3df555890097ab659508a1957d8d6091"><div class="ttname"><a href="ToyTools_8hh.html#a3df555890097ab659508a1957d8d6091">GaussianBunch</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; double &gt; &gt; GaussianBunch(const double &amp;m, const double &amp;p, const double &amp;n, const double &amp;eps, const double &amp;beta, const double alpha=0.)</div><div class="ttdoc">Generates a Gaussian bunch from the given beam parameters. </div><div class="ttdef"><b>Definition:</b> ToyTools.cc:3</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:51 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

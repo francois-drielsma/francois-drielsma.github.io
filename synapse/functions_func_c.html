@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -186,8 +186,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ComputeFactor()
 : <a class="el" href="classScattering.html#a500061654ce939f6e4e01c6565e4c553">Scattering</a>
 </li>
-<li>ComputeVoronoiVolumes()
-: <a class="el" href="classBeam.html#a9226c72e1c653c57c2a98f49503142d5">Beam</a>
+<li>Contains()
+: <a class="el" href="classBeam_1_1Bunch.html#a19c0bae19d1a16f3d91203c49594668a">Beam::Bunch</a>
+, <a class="el" href="classBeam_1_1BunchData.html#a0b5e07129c81ceeff6b2e1b595f4ca57">Beam::BunchData</a>
+, <a class="el" href="classBeam_1_1Stream.html#a7512531662337d2acef9b7b4a6e4c06a">Beam::Stream</a>
 </li>
 <li>Contour1D()
 : <a class="el" href="classDCauchy.html#a081f27b6a801e0e26da24990836998ce">DCauchy</a>
@@ -248,8 +250,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classDUniform.html#ad73467d0caa68481c7e7fa6064ddb4a8">DUniform</a>
 </li>
 <li>ContourVolume()
-: <a class="el" href="classBeam.html#a764b4e33553bb58f7a9e09b11e8907eb">Beam</a>
-, <a class="el" href="classDCauchy.html#ad1a8df94b21b4799e757cbf3c17e9361">DCauchy</a>
+: <a class="el" href="classDCauchy.html#ad1a8df94b21b4799e757cbf3c17e9361">DCauchy</a>
 , <a class="el" href="classDChiSquared.html#ac0adbfa9b7bf1ce784d3fe89ee064faa">DChiSquared</a>
 , <a class="el" href="classDensityEstimator.html#a82346429cf227881a62ac9fdc31dea10">DensityEstimator</a>
 , <a class="el" href="classDExponential.html#a1fc804c8032eb410e9896024cc491e53">DExponential</a>
@@ -265,6 +266,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ContourVolumeError()
 : <a class="el" href="classDensityEstimator.html#a9a8d1c07708567e0a42dec54c7f856fd">DensityEstimator</a>
 </li>
+<li>CoreSize()
+: <a class="el" href="classBeam_1_1Bunch.html#a85a9677a37b124289fa3a10eac5a6a4f">Beam::Bunch</a>
+</li>
 <li>coutIsActive()
 : <a class="el" href="classPitch.html#a40867234262f1f4178b3852e0b7d4ce1">Pitch</a>
 </li>
@@ -272,7 +276,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classPitch.html#a5323e8ec538611968c757849b0cde59b">Pitch</a>
 </li>
 <li>CovarianceMatrix()
-: <a class="el" href="classBeam.html#aef68f4440fbcaa8358b0bf9e38ac281d">Beam</a>
+: <a class="el" href="classBeam_1_1Bunch.html#a1dc97814be5aea52f5970243fc7a98e7">Beam::Bunch</a>
 </li>
 <li>cross()
 : <a class="el" href="classVector.html#a563166c3443231b0200c0ef3179846ba">Vector&lt; T &gt;</a>
@@ -281,7 +285,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:53 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

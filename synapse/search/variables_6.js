@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['k1',['k1',['../structMaterial.html#a886a67bd44adcc0c24b700b64b590299',1,'Material']]],
-  ['k2',['k2',['../structMaterial.html#a11ee544e84361b95737c33735464fd95',1,'Material']]]
+  ['hist_5fleg',['hist_leg',['../structBeam_1_1DrawOpt.html#acd462ef9cec706b8d76d70b400bac9c2',1,'Beam::DrawOpt']]],
+  ['hist_5fopt',['hist_opt',['../structBeam_1_1DrawOpt.html#a53735a6dab69429587a964bea864b94f',1,'Beam::DrawOpt']]]
 ];

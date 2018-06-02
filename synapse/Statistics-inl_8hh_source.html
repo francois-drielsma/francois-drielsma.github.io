@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>SynAPSE: math/Statistics-inl.hh Source File</title>
+<title>SynAPSE: src/math/Statistics-inl.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SynAPSE
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Synergistic Analysis of Phase Space Evolution</div>
   </td>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -105,141 +105,137 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( frac &lt; 0. || frac &gt; .5 ) {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">throw</span>(<a class="code" href="classExceptions_1_1Exception.html">Exceptions::Exception</a>(Exceptions::nonRecoverable,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                        <span class="stringliteral">&quot;Invalid fraction (0 &lt; frac &lt; .5)&quot;</span>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                        <span class="stringliteral">&quot;Invalid trimming fraction (0 &lt; frac &lt; .5)&quot;</span>,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="stringliteral">&quot;Math::Trim&quot;</span>));</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// Sort the points and discard the smallest and largest values</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  std::sort(vx.begin(), vx.end());</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">size_t</span> <span class="keywordtype">id</span> = frac*vx.size();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">size_t</span> i;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; id; i++) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    vx.erase(vx.begin());</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    vx.erase(vx.end()-1);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  std::vector&lt;double&gt; vnew;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::sort(vx.begin(), vx.end());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">size_t</span> ntrim = frac*vx.size();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">size_t</span> nfinal = vx.size()-2*ntrim;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">size_t</span> i;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">for</span> (i = ntrim; i &lt; ntrim+nfinal; i++)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      vnew.push_back(vx[i]);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment">// Randomly shuffle the elements to not return a sorted vector</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::srand(std::time(NULL));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::random_shuffle(vx.begin(), vx.end());</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; std::vector&lt;T&gt; <a class="code" href="namespaceMath.html#aa3ba34d5b9b7bc41d707edd13c4c571f">Trimmed</a>(std::vector&lt;T&gt; vx,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; frac) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="namespaceMath.html#a0b551c9e8dc2e6856736acabf8ff5197">Trim</a>(vx, frac);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">return</span> vx;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceMath.html#a9a78f02dcc0a1841741c1c727d0fad63">Winsorize</a>(std::vector&lt;T&gt;&amp; vx,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; frac) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">// If the sample is empty, throw</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">Assert::IsNotEmpty</a>(<span class="stringliteral">&quot;Math::Winsorize&quot;</span>, <span class="stringliteral">&quot;Input sample&quot;</span>, vx);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Handle the special values of n</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> ( !frac ) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( frac == .5 ) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">double</span> med = <a class="code" href="namespaceMath.html#aa6a892a2153f162d5c4bdbdad53b9b32">Median</a>(vx);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vx.size(); i++)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    vx[i] = med;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( frac &lt; 0. || frac &gt; .5 ) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">throw</span>(<a class="code" href="classExceptions_1_1Exception.html">Exceptions::Exception</a>(Exceptions::nonRecoverable,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="stringliteral">&quot;Invalid fraction (0 &lt; frac &lt; .5)&quot;</span>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="stringliteral">&quot;Math::Winsorize&quot;</span>));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// Sort the points and replace the smallest and largest values</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::sort(vx.begin(), vx.end());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">size_t</span> <span class="keywordtype">id</span> = frac*vx.size();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">double</span> lbound(vx[<span class="keywordtype">id</span>]), ubound(vx[vx.size()-1-id]);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">size_t</span> i;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; id; i++) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    vx[i] = lbound;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    vx[vx.size()-1-i] = ubound;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Randomly shuffle the elements to not return a sorted vector</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::srand(std::time(NULL));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::random_shuffle(vx.begin(), vx.end());</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; std::vector&lt;T&gt; <a class="code" href="namespaceMath.html#a20145814afaf3b9c90cfd50a11001d4e">Winsorized</a>(std::vector&lt;T&gt; vx,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; frac) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="namespaceMath.html#a9a78f02dcc0a1841741c1c727d0fad63">Winsorize</a>(vx, frac);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> vx;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> I&gt; I <a class="code" href="namespaceMath.html#a5652d075f8419c743c3731d4521b1cb6">RandomElement</a>(I begin, I end) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = std::distance(begin, end);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> divisor = RAND_MAX / n;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> k;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">do</span> { k = std::rand() / divisor; } <span class="keywordflow">while</span> (k &gt;= n);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::advance(begin, k);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> begin;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; std::vector&lt;T&gt; <a class="code" href="namespaceMath.html#a13a48fc848bfd9fc89489a6570e4b21c">Resample</a>(<span class="keyword">const</span> std::vector&lt;T&gt;&amp; vx,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                         <span class="keywordtype">size_t</span> m,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">bool</span> rep) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// If the sample is empty, throw</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">Assert::IsNotEmpty</a>(<span class="stringliteral">&quot;Math::Resample&quot;</span>, <span class="stringliteral">&quot;Input sample&quot;</span>, vx);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// If m=0, default it to the sample size</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span> ( !m )</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      m = vx.size();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// If no replacement, m must be smaller than n. If not, throw.</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> ( !rep &amp;&amp; m &gt;= vx.size() )</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">throw</span>(<a class="code" href="classExceptions_1_1Exception.html">Exceptions::Exception</a>(Exceptions::nonRecoverable,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                          <span class="stringliteral">&quot;Not enough points to resample without replacement&quot;</span>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                  <span class="stringliteral">&quot;Math::Resample&quot;</span>));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// Randomly pick m samples from the input sample. If no replacement, ditch (n-m) points randomly</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  std::vector&lt;T&gt; subsample;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">size_t</span> i, pos, divisor;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  std::srand(time(NULL));</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> ( rep ) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    subsample.resize(m);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    divisor = RAND_MAX/vx.size();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; m; i++) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    pos = std::rand()/divisor;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      } <span class="keywordflow">while</span> ( pos &gt; vx.size() );</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      subsample[i] = vx[pos];</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    subsample = vx;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; vx.size()-m; i++) {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      divisor = RAND_MAX/subsample.size();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    pos = std::rand()/divisor;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      } <span class="keywordflow">while</span> ( pos &gt; subsample.size() );</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      subsample.erase(subsample.begin()+pos);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> subsample;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::random_shuffle(vnew.begin(), vnew.end());</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  vx = vnew;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; std::vector&lt;T&gt; <a class="code" href="namespaceMath.html#aa3ba34d5b9b7bc41d707edd13c4c571f">Trimmed</a>(std::vector&lt;T&gt; vx,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; frac) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="namespaceMath.html#a0b551c9e8dc2e6856736acabf8ff5197">Trim</a>(vx, frac);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> vx;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="namespaceMath.html#a9a78f02dcc0a1841741c1c727d0fad63">Winsorize</a>(std::vector&lt;T&gt;&amp; vx,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; frac) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// If the sample is empty, throw</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">Assert::IsNotEmpty</a>(<span class="stringliteral">&quot;Math::Winsorize&quot;</span>, <span class="stringliteral">&quot;Input sample&quot;</span>, vx);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Handle the special values of n</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span> ( !frac ) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( frac == .5 ) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">double</span> med = <a class="code" href="namespaceMath.html#aa6a892a2153f162d5c4bdbdad53b9b32">Median</a>(vx);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vx.size(); i++)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    vx[i] = med;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( frac &lt; 0. || frac &gt; .5 ) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">throw</span>(<a class="code" href="classExceptions_1_1Exception.html">Exceptions::Exception</a>(Exceptions::nonRecoverable,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="stringliteral">&quot;Invalid fraction (0 &lt; frac &lt; .5)&quot;</span>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="stringliteral">&quot;Math::Winsorize&quot;</span>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Sort the points and replace the smallest and largest values</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::sort(vx.begin(), vx.end());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">size_t</span> <span class="keywordtype">id</span> = frac*vx.size();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">double</span> lbound(vx[<span class="keywordtype">id</span>]), ubound(vx[vx.size()-1-id]);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">size_t</span> i;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; id; i++) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    vx[i] = lbound;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    vx[vx.size()-1-i] = ubound;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// Randomly shuffle the elements to not return a sorted vector</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::srand(std::time(NULL));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::random_shuffle(vx.begin(), vx.end());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; std::vector&lt;T&gt; <a class="code" href="namespaceMath.html#a20145814afaf3b9c90cfd50a11001d4e">Winsorized</a>(std::vector&lt;T&gt; vx,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; frac) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="namespaceMath.html#a9a78f02dcc0a1841741c1c727d0fad63">Winsorize</a>(vx, frac);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> vx;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> I&gt; I <a class="code" href="namespaceMath.html#a5652d075f8419c743c3731d4521b1cb6">RandomElement</a>(I begin, I end) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = std::distance(begin, end);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> divisor = RAND_MAX / n;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> k;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">do</span> { k = std::rand() / divisor; } <span class="keywordflow">while</span> (k &gt;= n);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::advance(begin, k);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> begin;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; std::vector&lt;T&gt; <a class="code" href="namespaceMath.html#a13a48fc848bfd9fc89489a6570e4b21c">Resample</a>(<span class="keyword">const</span> std::vector&lt;T&gt;&amp; vx,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                         <span class="keywordtype">size_t</span> m,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">bool</span> rep) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// If the sample is empty, throw</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">Assert::IsNotEmpty</a>(<span class="stringliteral">&quot;Math::Resample&quot;</span>, <span class="stringliteral">&quot;Input sample&quot;</span>, vx);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// If m = 0, default it to the sample size</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> ( !m )</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      m = vx.size();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// If no replacement, m must be smaller than n. If not, throw.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">if</span> ( !rep &amp;&amp; m &gt;= vx.size() )</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">throw</span>(<a class="code" href="classExceptions_1_1Exception.html">Exceptions::Exception</a>(Exceptions::nonRecoverable,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                          <span class="stringliteral">&quot;Not enough points to resample without replacement&quot;</span>,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                  <span class="stringliteral">&quot;Math::Resample&quot;</span>));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// Randomly pick m samples from the input sample. If no replacement, ditch (n-m) points randomly</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  std::vector&lt;T&gt; subsample;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">size_t</span> i, pos, divisor;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::srand(time(NULL));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">if</span> ( rep ) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    subsample.resize(m);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    divisor = RAND_MAX/vx.size();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; m; i++) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    pos = std::rand()/divisor;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      } <span class="keywordflow">while</span> ( pos &gt; vx.size() );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      subsample[i] = vx[pos];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    subsample = vx;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::random_shuffle(subsample.begin(), subsample.end());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    subsample.resize(m);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> subsample;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="ttc" id="namespaceMath_html_aa6a892a2153f162d5c4bdbdad53b9b32"><div class="ttname"><a href="namespaceMath.html#aa6a892a2153f162d5c4bdbdad53b9b32">Math::Median</a></div><div class="ttdeci">double Median(const std::vector&lt; double &gt; &amp;vx)</div><div class="ttdoc">Computes the median of a variable sample. </div><div class="ttdef"><b>Definition:</b> Statistics.cc:404</div></div>
-<div class="ttc" id="namespaceMath_html_a5652d075f8419c743c3731d4521b1cb6"><div class="ttname"><a href="namespaceMath.html#a5652d075f8419c743c3731d4521b1cb6">Math::RandomElement</a></div><div class="ttdeci">I RandomElement(I begin, I end)</div><div class="ttdoc">Randomly select a single element from an array. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:83</div></div>
-<div class="ttc" id="namespaceMath_html_a13a48fc848bfd9fc89489a6570e4b21c"><div class="ttname"><a href="namespaceMath.html#a13a48fc848bfd9fc89489a6570e4b21c">Math::Resample</a></div><div class="ttdeci">std::vector&lt; T &gt; Resample(const std::vector&lt; T &gt; &amp;vx, size_t m=0, const bool rep=true)</div><div class="ttdoc">Randomly resample n data points into m data points with or without replacement. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:95</div></div>
+<div class="ttc" id="namespaceMath_html_a5652d075f8419c743c3731d4521b1cb6"><div class="ttname"><a href="namespaceMath.html#a5652d075f8419c743c3731d4521b1cb6">Math::RandomElement</a></div><div class="ttdeci">I RandomElement(I begin, I end)</div><div class="ttdoc">Randomly select a single element from an array. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:84</div></div>
+<div class="ttc" id="namespaceMath_html_a13a48fc848bfd9fc89489a6570e4b21c"><div class="ttname"><a href="namespaceMath.html#a13a48fc848bfd9fc89489a6570e4b21c">Math::Resample</a></div><div class="ttdeci">std::vector&lt; T &gt; Resample(const std::vector&lt; T &gt; &amp;vx, size_t m=0, const bool rep=true)</div><div class="ttdoc">Randomly resample n data points into m data points with or without replacement. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:96</div></div>
 <div class="ttc" id="namespaceMath_html_a0b551c9e8dc2e6856736acabf8ff5197"><div class="ttname"><a href="namespaceMath.html#a0b551c9e8dc2e6856736acabf8ff5197">Math::Trim</a></div><div class="ttdeci">void Trim(std::vector&lt; T &gt; &amp;vx, const double &amp;frac)</div><div class="ttdoc">Trim the n% lowest and n% largest values. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:2</div></div>
 <div class="ttc" id="classExceptions_1_1Exception_html"><div class="ttname"><a href="classExceptions_1_1Exception.html">Exceptions::Exception</a></div><div class="ttdoc">Global exception object for all non-standard exceptions thrown by the code. </div><div class="ttdef"><b>Definition:</b> Exception.hh:30</div></div>
-<div class="ttc" id="namespaceMath_html_aa3ba34d5b9b7bc41d707edd13c4c571f"><div class="ttname"><a href="namespaceMath.html#aa3ba34d5b9b7bc41d707edd13c4c571f">Math::Trimmed</a></div><div class="ttdeci">std::vector&lt; T &gt; Trimmed(std::vector&lt; T &gt; vx, const double &amp;frac)</div><div class="ttdoc">Trim the n% lowest and n% largest values. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:34</div></div>
-<div class="ttc" id="namespaceMath_html_a20145814afaf3b9c90cfd50a11001d4e"><div class="ttname"><a href="namespaceMath.html#a20145814afaf3b9c90cfd50a11001d4e">Math::Winsorized</a></div><div class="ttdeci">std::vector&lt; T &gt; Winsorized(std::vector&lt; T &gt; vx, const double &amp;frac)</div><div class="ttdoc">Winsorize to keep only a fraction frac of the original sample. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:76</div></div>
-<div class="ttc" id="namespaceMath_html_a9a78f02dcc0a1841741c1c727d0fad63"><div class="ttname"><a href="namespaceMath.html#a9a78f02dcc0a1841741c1c727d0fad63">Math::Winsorize</a></div><div class="ttdeci">void Winsorize(std::vector&lt; T &gt; &amp;vx, const double &amp;frac)</div><div class="ttdoc">Winsorize to keep only a fraction frac of the original sample. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:41</div></div>
+<div class="ttc" id="namespaceMath_html_aa3ba34d5b9b7bc41d707edd13c4c571f"><div class="ttname"><a href="namespaceMath.html#aa3ba34d5b9b7bc41d707edd13c4c571f">Math::Trimmed</a></div><div class="ttdeci">std::vector&lt; T &gt; Trimmed(std::vector&lt; T &gt; vx, const double &amp;frac)</div><div class="ttdoc">Trim the n% lowest and n% largest values. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:35</div></div>
+<div class="ttc" id="namespaceMath_html_a20145814afaf3b9c90cfd50a11001d4e"><div class="ttname"><a href="namespaceMath.html#a20145814afaf3b9c90cfd50a11001d4e">Math::Winsorized</a></div><div class="ttdeci">std::vector&lt; T &gt; Winsorized(std::vector&lt; T &gt; vx, const double &amp;frac)</div><div class="ttdoc">Winsorize to keep only a fraction frac of the original sample. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:77</div></div>
+<div class="ttc" id="namespaceMath_html_a9a78f02dcc0a1841741c1c727d0fad63"><div class="ttname"><a href="namespaceMath.html#a9a78f02dcc0a1841741c1c727d0fad63">Math::Winsorize</a></div><div class="ttdeci">void Winsorize(std::vector&lt; T &gt; &amp;vx, const double &amp;frac)</div><div class="ttdoc">Winsorize to keep only a fraction frac of the original sample. </div><div class="ttdef"><b>Definition:</b> Statistics.hh:42</div></div>
 <div class="ttc" id="namespaceAssert_html_a7713939ec19399c5766a1454ce2feadc"><div class="ttname"><a href="namespaceAssert.html#a7713939ec19399c5766a1454ce2feadc">Assert::IsNotEmpty</a></div><div class="ttdeci">void IsNotEmpty(const std::string &amp;location, const std::string &amp;what, const std::vector&lt; T &gt; &amp;vector)</div><div class="ttdoc">Asserts that a vector is not empty. </div><div class="ttdef"><b>Definition:</b> Assert.hh:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:51 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 2 2018 23:17:10 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

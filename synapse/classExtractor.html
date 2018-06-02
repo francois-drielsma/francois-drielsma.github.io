@@ -116,6 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0da249c590c92ed0714e8bd69ac236f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#a0da249c590c92ed0714e8bd69ac236f4">~Extractor</a> ()</td></tr>
 <tr class="memdesc:a0da249c590c92ed0714e8bd69ac236f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a0da249c590c92ed0714e8bd69ac236f4">More...</a><br/></td></tr>
 <tr class="separator:a0da249c590c92ed0714e8bd69ac236f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8a601fe1bade626c1201fc889040f8"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#a0d8a601fe1bade626c1201fc889040f8">Get</a> (const std::string &amp;key) const </td></tr>
+<tr class="memdesc:a0d8a601fe1bade626c1201fc889040f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the requested dictionary entry.  <a href="#a0d8a601fe1bade626c1201fc889040f8">More...</a><br/></td></tr>
+<tr class="separator:a0d8a601fe1bade626c1201fc889040f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac615d98390684d1e0bf21b0c1df5f10d"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#ac615d98390684d1e0bf21b0c1df5f10d">GetListOfKeys</a> () const </td></tr>
+<tr class="memdesc:ac615d98390684d1e0bf21b0c1df5f10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of keys in the dictionary.  <a href="#ac615d98390684d1e0bf21b0c1df5f10d">More...</a><br/></td></tr>
+<tr class="separator:ac615d98390684d1e0bf21b0c1df5f10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ae33dcf39b377dfd6b317a0dad0b4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBeam.html">Beam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#a43ae33dcf39b377dfd6b317a0dad0b4d">Ensemble</a> (const std::string &amp;data_type, const size_t plane_id, const bool measerr=false) const </td></tr>
 <tr class="memdesc:a43ae33dcf39b377dfd6b317a0dad0b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the beam at a specific z position.  <a href="#a43ae33dcf39b377dfd6b317a0dad0b4d">More...</a><br/></td></tr>
 <tr class="separator:a43ae33dcf39b377dfd6b317a0dad0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,12 +149,13 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae2834bf4308e568f0292e7457fce79a8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#ae2834bf4308e568f0292e7457fce79a8">_data_files</a></td></tr>
 <tr class="memdesc:ae2834bf4308e568f0292e7457fce79a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of data files.  <a href="#ae2834bf4308e568f0292e7457fce79a8">More...</a><br/></td></tr>
 <tr class="separator:ae2834bf4308e568f0292e7457fce79a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d937d88c098cd6e013adcb5975f3a9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#a24d937d88c098cd6e013adcb5975f3a9">_maus_version</a></td></tr>
-<tr class="memdesc:a24d937d88c098cd6e013adcb5975f3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAUS version.  <a href="#a24d937d88c098cd6e013adcb5975f3a9">More...</a><br/></td></tr>
-<tr class="separator:a24d937d88c098cd6e013adcb5975f3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e3adbc6edc35e3cd8ca27455c54032"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#a50e3adbc6edc35e3cd8ca27455c54032">_run_name</a></td></tr>
 <tr class="memdesc:a50e3adbc6edc35e3cd8ca27455c54032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the run.  <a href="#a50e3adbc6edc35e3cd8ca27455c54032">More...</a><br/></td></tr>
 <tr class="separator:a50e3adbc6edc35e3cd8ca27455c54032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27389dfa0e27aa875279bdfa6916e80d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExtractor.html#a27389dfa0e27aa875279bdfa6916e80d">_dictionary</a></td></tr>
+<tr class="memdesc:a27389dfa0e27aa875279bdfa6916e80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary of run characteristics.  <a href="#a27389dfa0e27aa875279bdfa6916e80d">More...</a><br/></td></tr>
+<tr class="separator:a27389dfa0e27aa875279bdfa6916e80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extracts the data from an array of imported ROOT file. </p>
@@ -344,6 +351,49 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0d8a601fe1bade626c1201fc889040f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; Extractor::Get </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the requested dictionary entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac615d98390684d1e0bf21b0c1df5f10d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;std::string&gt;&amp; Extractor::GetListOfKeys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the list of keys in the dictionary. </p>
+
+</div>
+</div>
 <a class="anchor" id="aadca568010fc0a4dac46655e572fa545"></a>
 <div class="memitem">
 <div class="memproto">
@@ -461,7 +511,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a24d937d88c098cd6e013adcb5975f3a9"></a>
+<a class="anchor" id="a27389dfa0e27aa875279bdfa6916e80d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -469,7 +519,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Extractor::_maus_version</td>
+          <td class="memname">std::map&lt;std::string, std::string&gt; Extractor::_dictionary</td>
         </tr>
       </table>
   </td>
@@ -479,7 +529,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>MAUS version. </p>
+<p>Dictionary of run characteristics. </p>
 
 </div>
 </div>
@@ -512,7 +562,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 22:44:53 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 27 2018 17:34:02 for SynAPSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
